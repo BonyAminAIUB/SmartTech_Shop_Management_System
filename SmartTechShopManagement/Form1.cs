@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SmartTechShopManagement
 {
-    public partial class Form1 : Form
+    public partial class btnSearch : Form
     {
-        public Form1()
+        public btnSearch()
         {
             InitializeComponent();
         }
@@ -23,6 +23,16 @@ namespace SmartTechShopManagement
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }
