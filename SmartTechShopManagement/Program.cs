@@ -16,7 +16,7 @@ namespace SmartTechShopManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new btnSearch());
+            Application.Run(new Home());
         }
     }
 }

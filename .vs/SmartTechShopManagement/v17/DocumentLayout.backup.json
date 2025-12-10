@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\bonya\\source\\repos\\SmartTechShopManagement\\",
+  "WorkspaceRootPath": "C:\\Users\\Niloy\\source\\repos\\SmartTechShopManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BFFDB4FB-3C47-4A2D-8563-7D93623C7C26}|SmartTechShopManagement\\SmartTechShopManagement.csproj|c:\\users\\bonya\\source\\repos\\smarttechshopmanagement\\smarttechshopmanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BFFDB4FB-3C47-4A2D-8563-7D93623C7C26}|SmartTechShopManagement\\SmartTechShopManagement.csproj|C:\\Users\\Niloy\\source\\repos\\SmartTechShopManagement\\SmartTechShopManagement\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFFDB4FB-3C47-4A2D-8563-7D93623C7C26}|SmartTechShopManagement\\SmartTechShopManagement.csproj|solutionrelative:SmartTechShopManagement\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFFDB4FB-3C47-4A2D-8563-7D93623C7C26}|SmartTechShopManagement\\SmartTechShopManagement.csproj|c:\\users\\niloy\\source\\repos\\smarttechshopmanagement\\smarttechshopmanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BFFDB4FB-3C47-4A2D-8563-7D93623C7C26}|SmartTechShopManagement\\SmartTechShopManagement.csproj|solutionrelative:smarttechshopmanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFFDB4FB-3C47-4A2D-8563-7D93623C7C26}|SmartTechShopManagement\\SmartTechShopManagement.csproj|C:\\Users\\bonya\\source\\repos\\SmartTechShopManagement\\smarttechshopmanagement\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BFFDB4FB-3C47-4A2D-8563-7D93623C7C26}|SmartTechShopManagement\\SmartTechShopManagement.csproj|c:\\users\\niloy\\source\\repos\\smarttechshopmanagement\\smarttechshopmanagement\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BFFDB4FB-3C47-4A2D-8563-7D93623C7C26}|SmartTechShopManagement\\SmartTechShopManagement.csproj|solutionrelative:smarttechshopmanagement\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFFDB4FB-3C47-4A2D-8563-7D93623C7C26}|SmartTechShopManagement\\SmartTechShopManagement.csproj|C:\\Users\\bonya\\source\\repos\\SmartTechShopManagement\\smarttechshopmanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFFDB4FB-3C47-4A2D-8563-7D93623C7C26}|SmartTechShopManagement\\SmartTechShopManagement.csproj|solutionrelative:smarttechshopmanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BFFDB4FB-3C47-4A2D-8563-7D93623C7C26}|SmartTechShopManagement\\SmartTechShopManagement.csproj|c:\\users\\niloy\\source\\repos\\smarttechshopmanagement\\smarttechshopmanagement\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFFDB4FB-3C47-4A2D-8563-7D93623C7C26}|SmartTechShopManagement\\SmartTechShopManagement.csproj|solutionrelative:smarttechshopmanagement\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,38 +30,52 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form2.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bonya\\source\\repos\\SmartTechShopManagement\\SmartTechShopManagement\\Form2.cs",
+              "DocumentIndex": 3,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\Niloy\\source\\repos\\SmartTechShopManagement\\SmartTechShopManagement\\Form2.cs",
               "RelativeDocumentMoniker": "SmartTechShopManagement\\Form2.cs",
-              "ToolTip": "C:\\Users\\bonya\\source\\repos\\SmartTechShopManagement\\SmartTechShopManagement\\Form2.cs [Design]",
-              "RelativeToolTip": "SmartTechShopManagement\\Form2.cs [Design]",
+              "ToolTip": "C:\\Users\\Niloy\\source\\repos\\SmartTechShopManagement\\SmartTechShopManagement\\Form2.cs*",
+              "RelativeToolTip": "SmartTechShopManagement\\Form2.cs*",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T05:49:53.263Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\bonya\\source\\repos\\SmartTechShopManagement\\SmartTechShopManagement\\Form1.cs",
-              "RelativeDocumentMoniker": "SmartTechShopManagement\\Form1.cs",
-              "ToolTip": "C:\\Users\\bonya\\source\\repos\\SmartTechShopManagement\\SmartTechShopManagement\\Form1.cs*",
-              "RelativeToolTip": "SmartTechShopManagement\\Form1.cs*",
-              "ViewState": "AgIAAAwAAAAAAAAAAIA0wBoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T05:40:38.592Z",
+              "WhenOpened": "2025-12-10T13:43:03.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bonya\\source\\repos\\SmartTechShopManagement\\SmartTechShopManagement\\Form1.cs",
-              "RelativeDocumentMoniker": "SmartTechShopManagement\\Form1.cs",
-              "ToolTip": "C:\\Users\\bonya\\source\\repos\\SmartTechShopManagement\\SmartTechShopManagement\\Form1.cs [Design]*",
-              "RelativeToolTip": "SmartTechShopManagement\\Form1.cs [Design]*",
+              "DocumentIndex": 2,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Niloy\\source\\repos\\SmartTechShopManagement\\SmartTechShopManagement\\Form2.cs",
+              "RelativeDocumentMoniker": "SmartTechShopManagement\\Form2.cs",
+              "ToolTip": "C:\\Users\\Niloy\\source\\repos\\SmartTechShopManagement\\SmartTechShopManagement\\Form2.cs [Design]*",
+              "RelativeToolTip": "SmartTechShopManagement\\Form2.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T05:36:21.423Z",
+              "WhenOpened": "2025-12-10T13:41:04.727Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Niloy\\source\\repos\\SmartTechShopManagement\\SmartTechShopManagement\\Form1.cs",
+              "RelativeDocumentMoniker": "SmartTechShopManagement\\Form1.cs",
+              "ToolTip": "C:\\Users\\Niloy\\source\\repos\\SmartTechShopManagement\\SmartTechShopManagement\\Form1.cs",
+              "RelativeToolTip": "SmartTechShopManagement\\Form1.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAwwDAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T13:07:27.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Niloy\\source\\repos\\SmartTechShopManagement\\SmartTechShopManagement\\Form1.cs",
+              "RelativeDocumentMoniker": "SmartTechShopManagement\\Form1.cs",
+              "ToolTip": "C:\\Users\\Niloy\\source\\repos\\SmartTechShopManagement\\SmartTechShopManagement\\Form1.cs [Design]",
+              "RelativeToolTip": "SmartTechShopManagement\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T12:58:58.485Z",
               "EditorCaption": " [Design]"
             }
           ]

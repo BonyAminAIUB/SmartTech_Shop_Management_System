@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SmartTechShopManagement
 {
-    public partial class btnSearch : Form
+    public partial class Home : Form
     {
-        public btnSearch()
+        public Home()
         {
             InitializeComponent();
         }
@@ -35,6 +35,18 @@ namespace SmartTechShopManagement
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSearch_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
         }
     }
 }

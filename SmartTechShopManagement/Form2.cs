@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace SmartTechShopManagement
 {
-    public partial class Form2 : Form
+    public partial class Login : Form
     {
-        public Form2()
+        public Login()
         {
             InitializeComponent();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
