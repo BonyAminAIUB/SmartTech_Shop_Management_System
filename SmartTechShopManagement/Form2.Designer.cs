@@ -1,6 +1,6 @@
 ﻿namespace SmartTechShopManagement
 {
-    partial class LoginForm
+    partial class RegistrationForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,37 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnRegistration = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnRegistration
-            // 
-            this.btnRegistration.Location = new System.Drawing.Point(858, 161);
-            this.btnRegistration.Name = "btnRegistration";
-            this.btnRegistration.Size = new System.Drawing.Size(75, 23);
-            this.btnRegistration.TabIndex = 1;
-            this.btnRegistration.Text = "button2";
-            this.btnRegistration.UseVisualStyleBackColor = true;
-            this.btnRegistration.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // LoginForm
+            // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1000, 700);
-            this.Controls.Add(this.btnRegistration);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "LoginForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SmartTech Shop Management System | Log In";
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "RegistrationForm";
+            this.Text = "Form2";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnRegistration;
     }
 }
-

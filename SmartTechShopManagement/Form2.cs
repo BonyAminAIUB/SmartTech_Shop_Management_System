@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace SmartTechShopManagement
 {
-    public partial class LoginForm : Form
+    public partial class RegistrationForm : Form
     {
-        public LoginForm()
+        public RegistrationForm()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            RegistrationForm regForm = new RegistrationForm();
-            regForm.Show();
-            this.Hide();
         }
     }
 }
