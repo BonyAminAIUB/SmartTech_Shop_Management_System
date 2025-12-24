@@ -21,5 +21,15 @@ namespace SmartTechShopManagement
         {
 
         }
+
+        private void lblDashboard_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
