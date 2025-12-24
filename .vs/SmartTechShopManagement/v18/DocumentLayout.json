@@ -1,0 +1,119 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Itsni\\source\\repos\\SmartTech Shop Management System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|c:\\users\\itsni\\source\\repos\\smarttech shop management system\\smarttechshopmanagement\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|solutionrelative:smarttechshopmanagement\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|C:\\Users\\Itsni\\source\\repos\\SmartTech Shop Management System\\smarttechshopmanagement\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|solutionrelative:smarttechshopmanagement\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|C:\\Users\\Itsni\\source\\repos\\SmartTech Shop Management System\\smarttechshopmanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|solutionrelative:smarttechshopmanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|c:\\users\\itsni\\source\\repos\\smarttech shop management system\\smarttechshopmanagement\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|solutionrelative:smarttechshopmanagement\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|C:\\Users\\Itsni\\source\\repos\\SmartTech Shop Management System\\smarttechshopmanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|solutionrelative:smarttechshopmanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|C:\\Users\\Itsni\\source\\repos\\SmartTech Shop Management System\\smarttechshopmanagement\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|solutionrelative:smarttechshopmanagement\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\Itsni\\source\\repos\\SmartTech Shop Management System\\SmartTechShopManagement\\Form2.cs",
+              "RelativeDocumentMoniker": "SmartTechShopManagement\\Form2.cs",
+              "ToolTip": "C:\\Users\\Itsni\\source\\repos\\SmartTech Shop Management System\\SmartTechShopManagement\\Form2.cs",
+              "RelativeToolTip": "SmartTechShopManagement\\Form2.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAuwBcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T08:07:42.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dashboard.cs",
+              "DocumentMoniker": "C:\\Users\\Itsni\\source\\repos\\SmartTech Shop Management System\\SmartTechShopManagement\\Dashboard.cs",
+              "RelativeDocumentMoniker": "SmartTechShopManagement\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\Itsni\\source\\repos\\SmartTech Shop Management System\\SmartTechShopManagement\\Dashboard.cs",
+              "RelativeToolTip": "SmartTechShopManagement\\Dashboard.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAuwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T08:00:40.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Itsni\\source\\repos\\SmartTech Shop Management System\\SmartTechShopManagement\\Dashboard.cs",
+              "RelativeDocumentMoniker": "SmartTechShopManagement\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\Itsni\\source\\repos\\SmartTech Shop Management System\\SmartTechShopManagement\\Dashboard.cs [Design]",
+              "RelativeToolTip": "SmartTechShopManagement\\Dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T07:46:32.375Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Itsni\\source\\repos\\SmartTech Shop Management System\\SmartTechShopManagement\\Form1.cs",
+              "RelativeDocumentMoniker": "SmartTechShopManagement\\Form1.cs",
+              "ToolTip": "C:\\Users\\Itsni\\source\\repos\\SmartTech Shop Management System\\SmartTechShopManagement\\Form1.cs",
+              "RelativeToolTip": "SmartTechShopManagement\\Form1.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAiwDIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T07:45:13.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Itsni\\source\\repos\\SmartTech Shop Management System\\SmartTechShopManagement\\Form2.cs",
+              "RelativeDocumentMoniker": "SmartTechShopManagement\\Form2.cs",
+              "ToolTip": "C:\\Users\\Itsni\\source\\repos\\SmartTech Shop Management System\\SmartTechShopManagement\\Form2.cs [Design]",
+              "RelativeToolTip": "SmartTechShopManagement\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T07:42:23.498Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Itsni\\source\\repos\\SmartTech Shop Management System\\SmartTechShopManagement\\Form1.cs",
+              "RelativeDocumentMoniker": "SmartTechShopManagement\\Form1.cs",
+              "ToolTip": "C:\\Users\\Itsni\\source\\repos\\SmartTech Shop Management System\\SmartTechShopManagement\\Form1.cs [Design]",
+              "RelativeToolTip": "SmartTechShopManagement\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T07:42:21.104Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
