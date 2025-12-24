@@ -74,6 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -87,6 +88,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiply logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-computer-icon-vector-png-image_6698791.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\159604.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
