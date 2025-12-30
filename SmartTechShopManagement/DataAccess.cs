@@ -8,5 +8,6 @@ namespace SmartTechShopManagement
 {
     internal class DataAccess
     {
+
     }
 }
