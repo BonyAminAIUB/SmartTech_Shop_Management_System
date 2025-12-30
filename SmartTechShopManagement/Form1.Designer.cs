@@ -49,7 +49,7 @@
             // btnRegistration
             // 
             this.btnRegistration.Location = new System.Drawing.Point(1172, 394);
-            this.btnRegistration.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegistration.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegistration.Name = "btnRegistration";
             this.btnRegistration.Size = new System.Drawing.Size(100, 29);
             this.btnRegistration.TabIndex = 1;
@@ -73,7 +73,7 @@
             this.txbUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbUsername.Location = new System.Drawing.Point(353, 535);
-            this.txbUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txbUsername.Name = "txbUsername";
             this.txbUsername.Size = new System.Drawing.Size(133, 39);
             this.txbUsername.TabIndex = 6;
@@ -85,7 +85,7 @@
             this.txtUserBlank.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUserBlank.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserBlank.Location = new System.Drawing.Point(353, 589);
-            this.txtUserBlank.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUserBlank.Margin = new System.Windows.Forms.Padding(4);
             this.txtUserBlank.Name = "txtUserBlank";
             this.txtUserBlank.Size = new System.Drawing.Size(554, 39);
             this.txtUserBlank.TabIndex = 7;
@@ -96,7 +96,7 @@
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(353, 652);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(133, 39);
             this.txtPassword.TabIndex = 8;
@@ -109,7 +109,7 @@
             this.txtPasswordBlank.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPasswordBlank.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPasswordBlank.Location = new System.Drawing.Point(353, 712);
-            this.txtPasswordBlank.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPasswordBlank.Margin = new System.Windows.Forms.Padding(4);
             this.txtPasswordBlank.Name = "txtPasswordBlank";
             this.txtPasswordBlank.Size = new System.Drawing.Size(554, 39);
             this.txtPasswordBlank.TabIndex = 9;
@@ -122,7 +122,7 @@
             this.btnLogIn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogIn.ForeColor = System.Drawing.Color.White;
             this.btnLogIn.Location = new System.Drawing.Point(475, 805);
-            this.btnLogIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogIn.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(321, 55);
             this.btnLogIn.TabIndex = 12;
@@ -205,8 +205,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnRegistration);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SmartTech Shop Management System | Log In";
