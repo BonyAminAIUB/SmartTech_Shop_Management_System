@@ -119,5 +119,11 @@
   <ItemGroup>
     <None Include="Resources\1000_F_223339735_iR1CO03SCZJQ4rIkhxIrffELcElrSWt1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bc56f3856f7cc17e6c151f358d35acd0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forgot-lock-office-password-icon-vector-20106542.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
