@@ -46,7 +46,7 @@ namespace SmartTechShopManagement
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            Dashboard dashboard = new Dashboard();
+            CashierDashboard dashboard = new CashierDashboard();
             dashboard.Show();
             this.Hide();
         }

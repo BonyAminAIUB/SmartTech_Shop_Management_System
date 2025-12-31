@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|c:\\users\\itsni\\source\\repos\\smarttech_shop_management_system\\smarttechshopmanagement\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|solutionrelative:smarttechshopmanagement\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|c:\\users\\itsni\\source\\repos\\smarttech_shop_management_system\\smarttechshopmanagement\\cashierdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|solutionrelative:smarttechshopmanagement\\cashierdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\smarttechshopmanagement\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|solutionrelative:smarttechshopmanagement\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|c:\\users\\itsni\\source\\repos\\smarttech_shop_management_system\\smarttechshopmanagement\\paymentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|solutionrelative:smarttechshopmanagement\\paymentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|c:\\users\\itsni\\source\\repos\\smarttech_shop_management_system\\smarttechshopmanagement\\cashierdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|solutionrelative:smarttechshopmanagement\\cashierdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\smarttechshopmanagement\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|solutionrelative:smarttechshopmanagement\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|c:\\users\\itsni\\source\\repos\\smarttech_shop_management_system\\smarttechshopmanagement\\stockmanagerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|solutionrelative:smarttechshopmanagement\\stockmanagerdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4ABE455D-CE58-4D75-8029-59A5DB97A769}|SmartTechShopManagement\\SmartTechShopManagement.csproj|C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\smarttechshopmanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -38,11 +50,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PaymentForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\SmartTechShopManagement\\PaymentForm.cs",
+              "RelativeDocumentMoniker": "SmartTechShopManagement\\PaymentForm.cs",
+              "ToolTip": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\SmartTechShopManagement\\PaymentForm.cs [Design]",
+              "RelativeToolTip": "SmartTechShopManagement\\PaymentForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T03:11:53.135Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StockManagerDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\SmartTechShopManagement\\StockManagerDashboard.cs",
+              "RelativeDocumentMoniker": "SmartTechShopManagement\\StockManagerDashboard.cs",
+              "ToolTip": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\SmartTechShopManagement\\StockManagerDashboard.cs [Design]",
+              "RelativeToolTip": "SmartTechShopManagement\\StockManagerDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T01:03:02.028Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "AdminDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\SmartTechShopManagement\\AdminDashboard.cs",
+              "RelativeDocumentMoniker": "SmartTechShopManagement\\AdminDashboard.cs",
+              "ToolTip": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\SmartTechShopManagement\\AdminDashboard.cs [Design]",
+              "RelativeToolTip": "SmartTechShopManagement\\AdminDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T01:02:22.8Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\SmartTechShopManagement\\Form2.cs",
               "RelativeDocumentMoniker": "SmartTechShopManagement\\Form2.cs",
@@ -54,13 +102,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Dashboard.cs",
-              "DocumentMoniker": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\SmartTechShopManagement\\Dashboard.cs",
-              "RelativeDocumentMoniker": "SmartTechShopManagement\\Dashboard.cs",
-              "ToolTip": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\SmartTechShopManagement\\Dashboard.cs",
-              "RelativeToolTip": "SmartTechShopManagement\\Dashboard.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAswCYAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CashierDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\SmartTechShopManagement\\CashierDashboard.cs",
+              "RelativeDocumentMoniker": "SmartTechShopManagement\\CashierDashboard.cs",
+              "ToolTip": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\SmartTechShopManagement\\CashierDashboard.cs*",
+              "RelativeToolTip": "SmartTechShopManagement\\CashierDashboard.cs*",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAWwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-24T08:00:40.838Z",
               "EditorCaption": ""
@@ -68,18 +116,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Dashboard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\SmartTechShopManagement\\Dashboard.cs",
-              "RelativeDocumentMoniker": "SmartTechShopManagement\\Dashboard.cs",
-              "ToolTip": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\SmartTechShopManagement\\Dashboard.cs [Design]",
-              "RelativeToolTip": "SmartTechShopManagement\\Dashboard.cs [Design]",
+              "Title": "CashierDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\SmartTechShopManagement\\CashierDashboard.cs",
+              "RelativeDocumentMoniker": "SmartTechShopManagement\\CashierDashboard.cs",
+              "ToolTip": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\SmartTechShopManagement\\CashierDashboard.cs [Design]*",
+              "RelativeToolTip": "SmartTechShopManagement\\CashierDashboard.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-24T07:46:32.375Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\SmartTechShopManagement\\Form1.cs",
               "RelativeDocumentMoniker": "SmartTechShopManagement\\Form1.cs",
@@ -92,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\SmartTechShopManagement\\Form2.cs",
               "RelativeDocumentMoniker": "SmartTechShopManagement\\Form2.cs",
@@ -103,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\SmartTechShopManagement\\Form1.cs",
               "RelativeDocumentMoniker": "SmartTechShopManagement\\Form1.cs",
@@ -115,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Itsni\\source\\repos\\SmartTech_Shop_Management_System\\SmartTechShopManagement\\Program.cs",
               "RelativeDocumentMoniker": "SmartTechShopManagement\\Program.cs",

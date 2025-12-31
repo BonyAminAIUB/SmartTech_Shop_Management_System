@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SmartTechShopManagement
 {
-    public partial class Dashboard : Form
+    public partial class CashierDashboard : Form
     {
-        public Dashboard()
+        public CashierDashboard()
         {
             InitializeComponent();
         }

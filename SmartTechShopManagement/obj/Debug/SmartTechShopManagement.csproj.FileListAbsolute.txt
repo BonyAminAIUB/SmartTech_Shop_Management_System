@@ -36,7 +36,6 @@ C:\Users\VICTUS\source\repos\SmartTechShopManagement\SmartTechShopManagement\obj
 C:\Users\VICTUS\source\repos\SmartTechShopManagement\SmartTechShopManagement\obj\Debug\SmartTechShopManagement.exe
 C:\Users\VICTUS\source\repos\SmartTechShopManagement\SmartTechShopManagement\obj\Debug\SmartTechShopManagement.pdb
 C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManagement\obj\Debug\SmartTechShopManagement.csproj.AssemblyReference.cache
-C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManagement\obj\Debug\SmartTechShopManagement.Dashboard.resources
 C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManagement\obj\Debug\SmartTechShopManagement.LoginForm.resources
 C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManagement\obj\Debug\SmartTechShopManagement.RegistrationForm.resources
 C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManagement\obj\Debug\SmartTechShopManagement.Properties.Resources.resources
@@ -47,3 +46,4 @@ C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManage
 C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManagement\bin\Debug\SmartTechShopManagement.exe.config
 C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManagement\bin\Debug\SmartTechShopManagement.exe
 C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManagement\bin\Debug\SmartTechShopManagement.pdb
+C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManagement\obj\Debug\SmartTechShopManagement.CashierDashboard.resources
