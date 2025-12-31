@@ -26,42 +26,47 @@ namespace SmartTechShopManagement
 
         private void btnResetPassword_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text.Trim() == string.Empty)
-            {
-                MessageBox.Show("Please enter user name.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            else if (txtEmail.Text.Trim() == string.Empty)
-            {
-                MessageBox.Show("Please enter email.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            else
-            {
-                string pass = Computer.Computer.ForgotPassword(
-                    txtUsername.Text.Trim(),
-                    txtEmail.Text.Trim()
-                );
+            //if (txtUsername.Text.Trim() == string.Empty)
+            //{
+            //    MessageBox.Show("Please enter user name.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    return;
+            //}
+            //else if (txtEmail.Text.Trim() == string.Empty)
+            //{
+            //    MessageBox.Show("Please enter email.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    return;
+            //}
+            //else
+            //{
+            //    string pass = Computer.Computer.ForgotPassword(
+            //        txtUsername.Text.Trim(),
+            //        txtEmail.Text.Trim()
+            //    );
 
-                if (pass != string.Empty)
-                {
-                    MessageBox.Show(
-                        $"Your password is: {pass}",
-                        "Information",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Information
-                    );
-                }
-                else
-                {
-                    MessageBox.Show(
-                        "Username or email is incorrect!",
-                        "Information",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Information
-                    );
-                }
-            }
+            //    if (pass != string.Empty)
+            //    {
+            //        MessageBox.Show(
+            //            $"Your password is: {pass}",
+            //            "Information",
+            //            MessageBoxButtons.OK,
+            //            MessageBoxIcon.Information
+            //        );
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show(
+            //            "Username or email is incorrect!",
+            //            "Information",
+            //            MessageBoxButtons.OK,
+            //            MessageBoxIcon.Information
+            //        );
+            //    }
+            //}
+
+        }
+
+        private void RegistrationForm_Load(object sender, EventArgs e)
+        {
 
         }
     }

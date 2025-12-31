@@ -19,6 +19,28 @@ namespace SmartTechShopManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //pnlPos.Visible = true;
+            //pnlEmpSales.Visible = false;
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //pnlPos.Visible = false;
+            //pnlEmpSales.Visible = true;
+        }
+
+        private void pnlPos_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
