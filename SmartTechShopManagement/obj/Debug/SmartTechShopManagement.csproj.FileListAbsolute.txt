@@ -46,7 +46,7 @@ C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManage
 C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManagement\bin\Debug\SmartTechShopManagement.exe.config
 C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManagement\bin\Debug\SmartTechShopManagement.exe
 C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManagement\bin\Debug\SmartTechShopManagement.pdb
-C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManagement\obj\Debug\SmartTechShopManagement.CashierDashboard.resources
 C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManagement\obj\Debug\SmartTechShopManagement.AdminDashboard.resources
 C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManagement\obj\Debug\SmartTechShopManagement.PaymentForm.resources
-C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManagement\obj\Debug\SmartTechShopManagement.StockManagerDashboard.resources
+C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManagement\obj\Debug\SmartTechShopManagement.ManagerDashboard.resources
+C:\Users\Itsni\source\repos\SmartTech_Shop_Management_System\SmartTechShopManagement\obj\Debug\SmartTechShopManagement.SalesmanDashboard.resources

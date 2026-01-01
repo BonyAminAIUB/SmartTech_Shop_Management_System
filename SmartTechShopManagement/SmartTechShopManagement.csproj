@@ -53,13 +53,16 @@
     <Compile Include="AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="CashierDashboard.cs">
+    <Compile Include="Connection.cs" />
+    <Compile Include="Enum\DashboardSource.cs" />
+    <Compile Include="SalesmanDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CashierDashboard.Designer.cs">
-      <DependentUpon>CashierDashboard.cs</DependentUpon>
+    <Compile Include="SalesmanDashboard.Designer.cs">
+      <DependentUpon>SalesmanDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="DataAccess.cs" />
+    <Compile Include="Enum\UserRole.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,17 +83,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StockManagerDashboard.cs">
+    <Compile Include="ManagerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StockManagerDashboard.Designer.cs">
-      <DependentUpon>StockManagerDashboard.cs</DependentUpon>
+    <Compile Include="ManagerDashboard.Designer.cs">
+      <DependentUpon>ManagerDashboard.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CashierDashboard.resx">
-      <DependentUpon>CashierDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="SalesmanDashboard.resx">
+      <DependentUpon>SalesmanDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -111,8 +114,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="StockManagerDashboard.resx">
-      <DependentUpon>StockManagerDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="ManagerDashboard.resx">
+      <DependentUpon>ManagerDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

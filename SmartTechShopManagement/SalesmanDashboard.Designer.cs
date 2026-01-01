@@ -1,6 +1,6 @@
 ﻿namespace SmartTechShopManagement
 {
-    partial class CashierDashboard
+    partial class SalesmanDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -30,10 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnlLeftDashboard = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
             this.lblDashboard = new System.Windows.Forms.Label();
             this.pnlPos = new System.Windows.Forms.Panel();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -45,7 +50,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -59,23 +63,35 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.label14 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlCustomerHistory = new System.Windows.Forms.Panel();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.label15 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
+            this.pnlBrowseHardware = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.pnlLowStockAlart = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.pnlLeftDashboard.SuspendLayout();
             this.pnlPos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.pnlCustomerHistory.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.pnlBrowseHardware.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            this.pnlLowStockAlart.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLeftDashboard
             // 
             this.pnlLeftDashboard.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pnlLeftDashboard.Controls.Add(this.button8);
+            this.pnlLeftDashboard.Controls.Add(this.button7);
             this.pnlLeftDashboard.Controls.Add(this.button6);
             this.pnlLeftDashboard.Controls.Add(this.button4);
             this.pnlLeftDashboard.Controls.Add(this.btnProducts);
@@ -87,6 +103,45 @@
             this.pnlLeftDashboard.Size = new System.Drawing.Size(200, 881);
             this.pnlLeftDashboard.TabIndex = 0;
             // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.SystemColors.Control;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(0, 189);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(200, 46);
+            this.button8.TabIndex = 5;
+            this.button8.Text = "Alart Low Stock";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.SystemColors.Control;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(0, 142);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(200, 46);
+            this.button7.TabIndex = 4;
+            this.button7.Text = "Browse Hardware";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Red;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(0, 834);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(200, 46);
+            this.button6.TabIndex = 3;
+            this.button6.Text = "Log Out";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.Control;
@@ -96,7 +151,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(200, 46);
             this.button4.TabIndex = 2;
-            this.button4.Text = "Employee Sales";
+            this.button4.Text = "Customer History";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -159,6 +214,25 @@
             this.pnlPos.Size = new System.Drawing.Size(1244, 881);
             this.pnlPos.TabIndex = 1;
             this.pnlPos.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlPos_Paint);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(372, 751);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(252, 21);
+            this.comboBox2.TabIndex = 28;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(221, 749);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(132, 22);
+            this.label14.TabIndex = 27;
+            this.label14.Text = "Payment Options";
             // 
             // comboBox1
             // 
@@ -272,15 +346,6 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Add To Cart";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(5, 209);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 82;
-            this.dataGridView3.Size = new System.Drawing.Size(825, 277);
-            this.dataGridView3.TabIndex = 13;
             // 
             // textBox3
             // 
@@ -409,68 +474,113 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Customer Name";
             // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(5, 209);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowHeadersWidth = 82;
+            this.dataGridView3.Size = new System.Drawing.Size(825, 277);
+            this.dataGridView3.TabIndex = 13;
+            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // label14
+            // pnlCustomerHistory
             // 
-            this.label14.AutoSize = true;
-            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(221, 749);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(132, 22);
-            this.label14.TabIndex = 27;
-            this.label14.Text = "Payment Options";
+            this.pnlCustomerHistory.Controls.Add(this.dataGridView4);
+            this.pnlCustomerHistory.Controls.Add(this.label15);
+            this.pnlCustomerHistory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlCustomerHistory.Location = new System.Drawing.Point(0, 0);
+            this.pnlCustomerHistory.Name = "pnlCustomerHistory";
+            this.pnlCustomerHistory.Size = new System.Drawing.Size(1244, 881);
+            this.pnlCustomerHistory.TabIndex = 29;
             // 
-            // comboBox2
+            // dataGridView4
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(372, 751);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(252, 21);
-            this.comboBox2.TabIndex = 28;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label15);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(200, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1244, 881);
-            this.panel1.TabIndex = 29;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(9, 95);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(1223, 773);
+            this.dataGridView4.TabIndex = 1;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(21, 12);
+            this.label15.Location = new System.Drawing.Point(567, 8);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(103, 20);
+            this.label15.Size = new System.Drawing.Size(131, 20);
             this.label15.TabIndex = 0;
-            this.label15.Text = "Hello Cashier";
+            this.label15.Text = "Customer History";
             // 
-            // button6
+            // pnlBrowseHardware
             // 
-            this.button6.BackColor = System.Drawing.Color.Red;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(0, 834);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(200, 46);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "Log Out";
-            this.button6.UseVisualStyleBackColor = false;
+            this.pnlBrowseHardware.Controls.Add(this.pnlCustomerHistory);
+            this.pnlBrowseHardware.Controls.Add(this.label16);
+            this.pnlBrowseHardware.Controls.Add(this.dataGridView5);
+            this.pnlBrowseHardware.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlBrowseHardware.Location = new System.Drawing.Point(200, 0);
+            this.pnlBrowseHardware.Name = "pnlBrowseHardware";
+            this.pnlBrowseHardware.Size = new System.Drawing.Size(1244, 881);
+            this.pnlBrowseHardware.TabIndex = 2;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(404, 14);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(135, 20);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "Browse Hardware";
+            // 
+            // dataGridView5
+            // 
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Location = new System.Drawing.Point(9, 95);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.Size = new System.Drawing.Size(1223, 774);
+            this.dataGridView5.TabIndex = 0;
+            // 
+            // pnlLowStockAlart
+            // 
+            this.pnlLowStockAlart.Controls.Add(this.label17);
+            this.pnlLowStockAlart.Controls.Add(this.dataGridView6);
+            this.pnlLowStockAlart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlLowStockAlart.Location = new System.Drawing.Point(200, 0);
+            this.pnlLowStockAlart.Name = "pnlLowStockAlart";
+            this.pnlLowStockAlart.Size = new System.Drawing.Size(1244, 881);
+            this.pnlLowStockAlart.TabIndex = 2;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(409, 11);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(120, 20);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "Low Stock Alart";
+            // 
+            // dataGridView6
+            // 
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Location = new System.Drawing.Point(9, 95);
+            this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.Size = new System.Drawing.Size(1223, 773);
+            this.dataGridView6.TabIndex = 0;
             // 
             // CashierDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1444, 881);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlBrowseHardware);
+            this.Controls.Add(this.pnlLowStockAlart);
             this.Controls.Add(this.pnlPos);
             this.Controls.Add(this.pnlLeftDashboard);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -483,11 +593,18 @@
             this.pnlLeftDashboard.PerformLayout();
             this.pnlPos.ResumeLayout(false);
             this.pnlPos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.pnlCustomerHistory.ResumeLayout(false);
+            this.pnlCustomerHistory.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            this.pnlBrowseHardware.ResumeLayout(false);
+            this.pnlBrowseHardware.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            this.pnlLowStockAlart.ResumeLayout(false);
+            this.pnlLowStockAlart.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -527,8 +644,17 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlCustomerHistory;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Panel pnlBrowseHardware;
+        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Panel pnlLowStockAlart;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.DataGridView dataGridView6;
     }
 }

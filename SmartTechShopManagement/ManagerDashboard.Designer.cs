@@ -1,6 +1,6 @@
 ﻿namespace SmartTechShopManagement
 {
-    partial class AdminDashboard
+    partial class ManagerDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -29,27 +29,24 @@
         private void InitializeComponent()
         {
             this.pnlLeftDashboard = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
             this.lblDashboard = new System.Windows.Forms.Label();
             this.pnlOverview = new System.Windows.Forms.Panel();
-            this.pnlProductManagement = new System.Windows.Forms.Panel();
-            this.pnlSalesReport = new System.Windows.Forms.Panel();
-            this.pnlStaffAccount = new System.Windows.Forms.Panel();
-            this.lblExistingStaff = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.pnlStock = new System.Windows.Forms.Panel();
+            this.pnlUpdateStock = new System.Windows.Forms.Panel();
+            this.pnlLowStockProduct = new System.Windows.Forms.Panel();
             this.pnlLeftDashboard.SuspendLayout();
-            this.pnlStaffAccount.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLeftDashboard
             // 
             this.pnlLeftDashboard.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pnlLeftDashboard.Controls.Add(this.button3);
             this.pnlLeftDashboard.Controls.Add(this.button2);
             this.pnlLeftDashboard.Controls.Add(this.button1);
             this.pnlLeftDashboard.Controls.Add(this.button6);
@@ -61,34 +58,7 @@
             this.pnlLeftDashboard.Margin = new System.Windows.Forms.Padding(2);
             this.pnlLeftDashboard.Name = "pnlLeftDashboard";
             this.pnlLeftDashboard.Size = new System.Drawing.Size(200, 881);
-            this.pnlLeftDashboard.TabIndex = 1;
-            this.pnlLeftDashboard.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLeftDashboard_Paint);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.Control;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(0, 189);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 46);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Staff Accounts";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(0, 142);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 46);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Sales Report";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.pnlLeftDashboard.TabIndex = 2;
             // 
             // button6
             // 
@@ -112,7 +82,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(200, 46);
             this.button4.TabIndex = 2;
-            this.button4.Text = "Product Management";
+            this.button4.Text = "Stock";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -146,82 +116,84 @@
             this.pnlOverview.Location = new System.Drawing.Point(200, 0);
             this.pnlOverview.Name = "pnlOverview";
             this.pnlOverview.Size = new System.Drawing.Size(1244, 881);
-            this.pnlOverview.TabIndex = 2;
+            this.pnlOverview.TabIndex = 3;
             // 
-            // pnlProductManagement
+            // button1
             // 
-            this.pnlProductManagement.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlProductManagement.Location = new System.Drawing.Point(200, 0);
-            this.pnlProductManagement.Name = "pnlProductManagement";
-            this.pnlProductManagement.Size = new System.Drawing.Size(1244, 881);
-            this.pnlProductManagement.TabIndex = 0;
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(0, 190);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 46);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Low Stock Peoducts";
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // pnlSalesReport
+            // button2
             // 
-            this.pnlSalesReport.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlSalesReport.Location = new System.Drawing.Point(200, 0);
-            this.pnlSalesReport.Name = "pnlSalesReport";
-            this.pnlSalesReport.Size = new System.Drawing.Size(1244, 881);
-            this.pnlSalesReport.TabIndex = 0;
-            // 
-            // pnlStaffAccount
-            // 
-            this.pnlStaffAccount.Controls.Add(this.button3);
-            this.pnlStaffAccount.Controls.Add(this.dataGridView1);
-            this.pnlStaffAccount.Controls.Add(this.lblExistingStaff);
-            this.pnlStaffAccount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlStaffAccount.Location = new System.Drawing.Point(200, 0);
-            this.pnlStaffAccount.Name = "pnlStaffAccount";
-            this.pnlStaffAccount.Size = new System.Drawing.Size(1244, 881);
-            this.pnlStaffAccount.TabIndex = 0;
-            // 
-            // lblExistingStaff
-            // 
-            this.lblExistingStaff.AutoSize = true;
-            this.lblExistingStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExistingStaff.Location = new System.Drawing.Point(381, 13);
-            this.lblExistingStaff.Name = "lblExistingStaff";
-            this.lblExistingStaff.Size = new System.Drawing.Size(103, 20);
-            this.lblExistingStaff.TabIndex = 0;
-            this.lblExistingStaff.Text = "Existing Staff";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 95);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1218, 675);
-            this.dataGridView1.TabIndex = 1;
+            this.button2.BackColor = System.Drawing.SystemColors.Control;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(0, 143);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(200, 46);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Update Stock";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.SystemColors.Control;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(442, 803);
+            this.button3.Location = new System.Drawing.Point(0, 237);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(238, 32);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Add New Employee";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Size = new System.Drawing.Size(200, 46);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "Log Out";
+            this.button3.UseVisualStyleBackColor = false;
             // 
-            // AdminDashboard
+            // pnlStock
+            // 
+            this.pnlStock.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlStock.Location = new System.Drawing.Point(200, 0);
+            this.pnlStock.Name = "pnlStock";
+            this.pnlStock.Size = new System.Drawing.Size(1244, 881);
+            this.pnlStock.TabIndex = 0;
+            // 
+            // pnlUpdateStock
+            // 
+            this.pnlUpdateStock.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlUpdateStock.Location = new System.Drawing.Point(200, 0);
+            this.pnlUpdateStock.Name = "pnlUpdateStock";
+            this.pnlUpdateStock.Size = new System.Drawing.Size(1244, 881);
+            this.pnlUpdateStock.TabIndex = 0;
+            // 
+            // pnlLowStockProduct
+            // 
+            this.pnlLowStockProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlLowStockProduct.Location = new System.Drawing.Point(200, 0);
+            this.pnlLowStockProduct.Name = "pnlLowStockProduct";
+            this.pnlLowStockProduct.Size = new System.Drawing.Size(1244, 881);
+            this.pnlLowStockProduct.TabIndex = 0;
+            // 
+            // ManagerDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1444, 881);
-            this.Controls.Add(this.pnlStaffAccount);
-            this.Controls.Add(this.pnlSalesReport);
-            this.Controls.Add(this.pnlProductManagement);
+            this.Controls.Add(this.pnlLowStockProduct);
+            this.Controls.Add(this.pnlUpdateStock);
+            this.Controls.Add(this.pnlStock);
             this.Controls.Add(this.pnlOverview);
             this.Controls.Add(this.pnlLeftDashboard);
-            this.Name = "AdminDashboard";
-            this.Text = "AdminDashboard";
+            this.Name = "ManagerDashboard";
+            this.Text = "StockManagerDashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnlLeftDashboard.ResumeLayout(false);
             this.pnlLeftDashboard.PerformLayout();
-            this.pnlStaffAccount.ResumeLayout(false);
-            this.pnlStaffAccount.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -233,14 +205,12 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnProducts;
         private System.Windows.Forms.Label lblDashboard;
+        private System.Windows.Forms.Panel pnlOverview;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Panel pnlOverview;
-        private System.Windows.Forms.Panel pnlProductManagement;
-        private System.Windows.Forms.Panel pnlSalesReport;
-        private System.Windows.Forms.Panel pnlStaffAccount;
-        private System.Windows.Forms.Label lblExistingStaff;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel pnlStock;
+        private System.Windows.Forms.Panel pnlUpdateStock;
+        private System.Windows.Forms.Panel pnlLowStockProduct;
     }
 }
