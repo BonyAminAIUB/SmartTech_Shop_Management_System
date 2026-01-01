@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(1444, 881);
             this.Name = "StockManagerDashboard";
             this.Text = "StockManagerDashboard";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }
