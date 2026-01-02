@@ -9,9 +9,19 @@ namespace SmartTechShopManagement
 {
     public class Connection
     {   
-        public SqlConnection connect()
+        public SqlConnection Connect()
         {
-            string connectionString = 
+            string connectionString = @"Data Source =.\SQLEXPRESS;Initial Catalog=STSMSdb; Integrated Security = True;";
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+            return conn;
         }
+        public void push(string query)
+        {
+            SqlConnection conn = Connect();
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.ExecuteNonQuery();
+        }
+        
     }
 }
