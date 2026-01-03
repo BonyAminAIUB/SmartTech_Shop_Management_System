@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace SmartTechShopManagement
 {
@@ -21,7 +22,15 @@ namespace SmartTechShopManagement
             SqlConnection conn = Connect();
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.ExecuteNonQuery();
+            conn.Close();
         }
-        
+        public DataTable pullForDataTable(string query)
+        {
+            DataTable datatable = new DataTable();
+            SqlConnection conn = Connect();
+            SqlDataAdapter dadp = new SqlDataAdapter(query, conn);
+            dadp.Fill(datatable);
+            return datatable;
+        }
     }
 }

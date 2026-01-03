@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SmartTechShopManagement
 {
-    public partial class RegistrationForm : Form
+    public partial class Form3 : Form
     {
-        public RegistrationForm()
+        public Form3()
         {
             InitializeComponent();
         }

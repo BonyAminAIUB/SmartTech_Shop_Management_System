@@ -37,6 +37,7 @@
             this.btnProducts = new System.Windows.Forms.Button();
             this.lblDashboard = new System.Windows.Forms.Label();
             this.pnlPos = new System.Windows.Forms.Panel();
+            this.button9 = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -98,7 +99,7 @@
             this.pnlLeftDashboard.Controls.Add(this.lblDashboard);
             this.pnlLeftDashboard.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeftDashboard.Location = new System.Drawing.Point(0, 0);
-            this.pnlLeftDashboard.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlLeftDashboard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlLeftDashboard.Name = "pnlLeftDashboard";
             this.pnlLeftDashboard.Size = new System.Drawing.Size(200, 881);
             this.pnlLeftDashboard.TabIndex = 0;
@@ -108,7 +109,7 @@
             this.button8.BackColor = System.Drawing.SystemColors.Control;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Location = new System.Drawing.Point(0, 189);
-            this.button8.Margin = new System.Windows.Forms.Padding(2);
+            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(200, 46);
             this.button8.TabIndex = 5;
@@ -121,7 +122,7 @@
             this.button7.BackColor = System.Drawing.SystemColors.Control;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.Location = new System.Drawing.Point(0, 142);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
+            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(200, 46);
             this.button7.TabIndex = 4;
@@ -134,7 +135,7 @@
             this.button6.BackColor = System.Drawing.Color.Red;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(0, 834);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(200, 46);
             this.button6.TabIndex = 3;
@@ -147,7 +148,7 @@
             this.button4.BackColor = System.Drawing.SystemColors.Control;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(0, 95);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(200, 46);
             this.button4.TabIndex = 2;
@@ -160,7 +161,7 @@
             this.btnProducts.BackColor = System.Drawing.SystemColors.Control;
             this.btnProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProducts.Location = new System.Drawing.Point(0, 49);
-            this.btnProducts.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProducts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnProducts.Name = "btnProducts";
             this.btnProducts.Size = new System.Drawing.Size(200, 46);
             this.btnProducts.TabIndex = 1;
@@ -181,6 +182,7 @@
             // 
             // pnlPos
             // 
+            this.pnlPos.Controls.Add(this.button9);
             this.pnlPos.Controls.Add(this.comboBox2);
             this.pnlPos.Controls.Add(this.label14);
             this.pnlPos.Controls.Add(this.comboBox1);
@@ -214,6 +216,17 @@
             this.pnlPos.Size = new System.Drawing.Size(1244, 881);
             this.pnlPos.TabIndex = 1;
             this.pnlPos.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlPos_Paint);
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(754, 111);
+            this.button9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(74, 30);
+            this.button9.TabIndex = 29;
+            this.button9.Text = "Search";
+            this.button9.UseVisualStyleBackColor = true;
             // 
             // comboBox2
             // 
@@ -430,9 +443,9 @@
             // textBox2
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(532, 111);
+            this.textBox2.Location = new System.Drawing.Point(520, 111);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(298, 20);
+            this.textBox2.Size = new System.Drawing.Size(216, 20);
             this.textBox2.TabIndex = 4;
             // 
             // label2
@@ -440,7 +453,7 @@
             this.label2.AutoSize = true;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(372, 111);
+            this.label2.Location = new System.Drawing.Point(359, 111);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(154, 22);
             this.label2.TabIndex = 3;
@@ -460,7 +473,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Location = new System.Drawing.Point(137, 111);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(229, 20);
+            this.textBox1.Size = new System.Drawing.Size(217, 20);
             this.textBox1.TabIndex = 1;
             // 
             // label1
@@ -494,7 +507,7 @@
             this.pnlCustomerHistory.Controls.Add(this.dataGridView4);
             this.pnlCustomerHistory.Controls.Add(this.label15);
             this.pnlCustomerHistory.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlCustomerHistory.Location = new System.Drawing.Point(0, 0);
+            this.pnlCustomerHistory.Location = new System.Drawing.Point(200, 0);
             this.pnlCustomerHistory.Name = "pnlCustomerHistory";
             this.pnlCustomerHistory.Size = new System.Drawing.Size(1244, 881);
             this.pnlCustomerHistory.TabIndex = 29;
@@ -504,6 +517,7 @@
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView4.Location = new System.Drawing.Point(9, 95);
             this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.RowHeadersWidth = 82;
             this.dataGridView4.Size = new System.Drawing.Size(1223, 773);
             this.dataGridView4.TabIndex = 1;
             // 
@@ -519,7 +533,6 @@
             // 
             // pnlBrowseHardware
             // 
-            this.pnlBrowseHardware.Controls.Add(this.pnlCustomerHistory);
             this.pnlBrowseHardware.Controls.Add(this.label16);
             this.pnlBrowseHardware.Controls.Add(this.dataGridView5);
             this.pnlBrowseHardware.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -543,6 +556,7 @@
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView5.Location = new System.Drawing.Point(9, 95);
             this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.RowHeadersWidth = 82;
             this.dataGridView5.Size = new System.Drawing.Size(1223, 774);
             this.dataGridView5.TabIndex = 0;
             // 
@@ -571,20 +585,22 @@
             this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView6.Location = new System.Drawing.Point(9, 95);
             this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.RowHeadersWidth = 82;
             this.dataGridView6.Size = new System.Drawing.Size(1223, 773);
             this.dataGridView6.TabIndex = 0;
             // 
-            // CashierDashboard
+            // SalesmanDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1444, 881);
             this.Controls.Add(this.pnlBrowseHardware);
-            this.Controls.Add(this.pnlLowStockAlart);
             this.Controls.Add(this.pnlPos);
+            this.Controls.Add(this.pnlCustomerHistory);
+            this.Controls.Add(this.pnlLowStockAlart);
             this.Controls.Add(this.pnlLeftDashboard);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "CashierDashboard";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "SalesmanDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -656,5 +672,6 @@
         private System.Windows.Forms.Panel pnlLowStockAlart;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.Button button9;
     }
 }

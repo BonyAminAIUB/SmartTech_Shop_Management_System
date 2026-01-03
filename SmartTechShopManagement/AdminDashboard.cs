@@ -59,12 +59,54 @@ namespace SmartTechShopManagement
             pnlProductManagement.Visible = false;
             pnlSalesReport.Visible = false;
             pnlStaffAccount.Visible = true;
+
+            string query = "SELECT * From empInfoTb ";
+
+            Connection connection = new Connection();
+            dgvExistingStaff.DataSource = connection.pullForDataTable(query);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //form2
+            Regestration regestration = new Regestration();
+            regestration.Show();
+        }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT * From empInfoTb ";
+
+            Connection connection = new Connection();
+            dgvExistingStaff.DataSource = connection.pullForDataTable(query);
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            string pName, pBrand, pCatagory;
+            int pPrice, pQuantity;
+
+            pName = txbProductName.Text;
+            pBrand = cbxProductBrand.Text;
+            pCatagory = txbProductCatagory.Text;
+            pPrice = int.Parse(txbProductPrice.Text);
+            pQuantity =  int.Parse(txbProductQuantity.Text);
+
+            Connection connection = new Connection();
+            string query = "Insert into productInfoTb (ProductName,ProductBrand,ProductCatagory,ProductPrice,ProductQuantity) values ('"+pName+"','"+pBrand+"','"+pCatagory+"','"+pPrice+"','"+pQuantity+"')";
+            connection.push(query);
+
+            string queryForGetTable = "SELECT * FROM productInfoTb";
+            dgvAllProduct.DataSource = connection.pullForDataTable(queryForGetTable);
         }
     }
 }

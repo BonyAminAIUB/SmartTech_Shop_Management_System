@@ -1,6 +1,6 @@
 ﻿namespace SmartTechShopManagement
 {
-    partial class RegistrationForm
+    partial class Form3
     {
         /// <summary>
         /// Required designer variable.
