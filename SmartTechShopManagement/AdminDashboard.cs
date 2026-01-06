@@ -108,5 +108,15 @@ namespace SmartTechShopManagement
             string queryForGetTable = "SELECT * FROM productInfoTb";
             dgvAllProduct.DataSource = connection.pullForDataTable(queryForGetTable);
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

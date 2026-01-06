@@ -56,5 +56,10 @@ namespace SmartTechShopManagement
         {
 
         }
+
+        private void Regestration_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

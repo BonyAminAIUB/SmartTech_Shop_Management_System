@@ -164,5 +164,65 @@
   <ItemGroup>
     <None Include="Resources\forgot-lock-office-password-icon-vector-20106542.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overviewIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product-manager-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staffAcc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\financial-portfolio-icon-with-graph-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\financial-portfolio-icon-with-graph-vector1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stockupdate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lowStock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee-register.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feedback-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customerIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customerHistoryIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BrowseIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color-icon-for-avatar-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salesManIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stockmanagerIcon.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

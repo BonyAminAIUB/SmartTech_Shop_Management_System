@@ -118,31 +118,91 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bc56f3856f7cc17e6c151f358d35acd0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bc56f3856f7cc17e6c151f358d35acd0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eye hide" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eye hide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="computer icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\computer icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="159604" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\159604.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pngtree-computer-icon-vector-png-image_6698791" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pngtree-computer-icon-vector-png-image_6698791.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BrowseIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BrowseIcon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1000_F_223339735_iR1CO03SCZJQ4rIkhxIrffELcElrSWt1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1000_F_223339735_iR1CO03SCZJQ4rIkhxIrffELcElrSWt1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="multiply logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\multiply logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stockupdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stockupdate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="adminIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\adminIcon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="computer icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\computer icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="POS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\POS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bc56f3856f7cc17e6c151f358d35acd0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bc56f3856f7cc17e6c151f358d35acd0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="istockphoto-1165294902-612x612" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\istockphoto-1165294902-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="product-manager-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\product-manager-icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="salesManIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salesManIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eye hide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eye hide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="employee-register" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\employee-register.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="customerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customerIcon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="color-icon-for-avatar-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\color-icon-for-avatar-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lowStock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lowStock.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="productIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\productIcon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="forgot-lock-office-password-icon-vector-20106542" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\forgot-lock-office-password-icon-vector-20106542.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="financial-portfolio-icon-with-graph-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\financial-portfolio-icon-with-graph-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="financial-portfolio-icon-with-graph-vector1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\financial-portfolio-icon-with-graph-vector1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="customerHistoryIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customerHistoryIcon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="feedback-" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\feedback-.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="multiply logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\multiply logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-computer-icon-vector-png-image_6698791" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-computer-icon-vector-png-image_6698791.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="staffAcc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\staffAcc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overviewIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overviewIcon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="159604" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\159604.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stockmanagerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stockmanagerIcon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

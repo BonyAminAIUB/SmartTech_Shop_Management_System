@@ -48,10 +48,10 @@
             // 
             // btnBackToLogin
             // 
-            this.btnBackToLogin.Location = new System.Drawing.Point(535, 72);
-            this.btnBackToLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBackToLogin.Location = new System.Drawing.Point(713, 89);
+            this.btnBackToLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBackToLogin.Name = "btnBackToLogin";
-            this.btnBackToLogin.Size = new System.Drawing.Size(94, 26);
+            this.btnBackToLogin.Size = new System.Drawing.Size(125, 32);
             this.btnBackToLogin.TabIndex = 0;
             this.btnBackToLogin.Text = "Back to Login";
             this.btnBackToLogin.UseVisualStyleBackColor = true;
@@ -59,10 +59,10 @@
             // 
             // btnRegistration
             // 
-            this.btnRegistration.Location = new System.Drawing.Point(579, 172);
-            this.btnRegistration.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnRegistration.Location = new System.Drawing.Point(772, 212);
+            this.btnRegistration.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnRegistration.Name = "btnRegistration";
-            this.btnRegistration.Size = new System.Drawing.Size(50, 16);
+            this.btnRegistration.Size = new System.Drawing.Size(67, 20);
             this.btnRegistration.TabIndex = 14;
             this.btnRegistration.Text = "button2";
             this.btnRegistration.UseVisualStyleBackColor = true;
@@ -71,10 +71,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(133, 23);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(177, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(312, 75);
+            this.label1.Size = new System.Drawing.Size(400, 100);
             this.label1.TabIndex = 0;
             this.label1.Text = "SmartTech Shop Mangement System | Forgot Password\r\n\r\n\r\n\r\n\r\n";
             // 
@@ -82,10 +81,10 @@
             // 
             this.txbUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbUsername.Location = new System.Drawing.Point(158, 236);
-            this.txbUsername.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txbUsername.Location = new System.Drawing.Point(211, 290);
+            this.txbUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txbUsername.Name = "txbUsername";
-            this.txbUsername.Size = new System.Drawing.Size(67, 23);
+            this.txbUsername.Size = new System.Drawing.Size(89, 27);
             this.txbUsername.TabIndex = 0;
             this.txbUsername.Text = "Username:";
             this.txbUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -94,20 +93,20 @@
             // 
             this.txtUserBlank.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUserBlank.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserBlank.Location = new System.Drawing.Point(158, 263);
-            this.txtUserBlank.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtUserBlank.Location = new System.Drawing.Point(211, 324);
+            this.txtUserBlank.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUserBlank.Name = "txtUserBlank";
-            this.txtUserBlank.Size = new System.Drawing.Size(278, 23);
+            this.txtUserBlank.Size = new System.Drawing.Size(370, 27);
             this.txtUserBlank.TabIndex = 1;
             // 
             // txtPassword
             // 
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(158, 296);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtPassword.Location = new System.Drawing.Point(211, 364);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(67, 23);
+            this.txtPassword.Size = new System.Drawing.Size(89, 27);
             this.txtPassword.TabIndex = 0;
             this.txtPassword.Text = "Email:";
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -116,10 +115,10 @@
             // 
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(158, 323);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtEmail.Location = new System.Drawing.Point(211, 398);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(278, 23);
+            this.txtEmail.Size = new System.Drawing.Size(370, 27);
             this.txtEmail.TabIndex = 2;
             this.txtEmail.UseSystemPasswordChar = true;
             // 
@@ -129,10 +128,10 @@
             this.btnResetPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResetPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetPassword.ForeColor = System.Drawing.Color.White;
-            this.btnResetPassword.Location = new System.Drawing.Point(216, 366);
-            this.btnResetPassword.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnResetPassword.Location = new System.Drawing.Point(288, 450);
+            this.btnResetPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnResetPassword.Name = "btnResetPassword";
-            this.btnResetPassword.Size = new System.Drawing.Size(160, 29);
+            this.btnResetPassword.Size = new System.Drawing.Size(213, 36);
             this.btnResetPassword.TabIndex = 3;
             this.btnResetPassword.Text = "Reset Password";
             this.btnResetPassword.UseVisualStyleBackColor = false;
@@ -142,10 +141,10 @@
             // 
             this.picBoxPassHide.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picBoxPassHide.Image = global::SmartTechShopManagement.Properties.Resources._159604;
-            this.picBoxPassHide.Location = new System.Drawing.Point(433, 325);
-            this.picBoxPassHide.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.picBoxPassHide.Location = new System.Drawing.Point(577, 400);
+            this.picBoxPassHide.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.picBoxPassHide.Name = "picBoxPassHide";
-            this.picBoxPassHide.Size = new System.Drawing.Size(30, 21);
+            this.picBoxPassHide.Size = new System.Drawing.Size(39, 25);
             this.picBoxPassHide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBoxPassHide.TabIndex = 23;
             this.picBoxPassHide.TabStop = false;
@@ -153,10 +152,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::SmartTechShopManagement.Properties.Resources.multiply_logo;
-            this.pictureBox3.Location = new System.Drawing.Point(586, -6);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox3.Location = new System.Drawing.Point(781, -7);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(43, 46);
+            this.pictureBox3.Size = new System.Drawing.Size(57, 57);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 18;
             this.pictureBox3.TabStop = false;
@@ -164,10 +163,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::SmartTechShopManagement.Properties.Resources.forgot_lock_office_password_icon_vector_20106542;
-            this.pictureBox2.Location = new System.Drawing.Point(219, 55);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(292, 68);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(145, 168);
+            this.pictureBox2.Size = new System.Drawing.Size(193, 207);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
@@ -175,20 +174,20 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SmartTechShopManagement.Properties.Resources.pngtree_computer_icon_vector_png_image_6698791;
-            this.pictureBox1.Location = new System.Drawing.Point(1, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(1, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(136, 46);
+            this.pictureBox1.Size = new System.Drawing.Size(181, 57);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
-            // RegistrationForm
+            // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(656, 458);
+            this.ClientSize = new System.Drawing.Size(875, 564);
             this.Controls.Add(this.btnResetPassword);
             this.Controls.Add(this.picBoxPassHide);
             this.Controls.Add(this.txtEmail);
@@ -201,9 +200,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnRegistration);
             this.Controls.Add(this.btnBackToLogin);
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.Name = "RegistrationForm";
-            this.Text = "Form2";
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "Form3";
+            this.Text = "ForgotPassword";
             this.Load += new System.EventHandler(this.RegistrationForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxPassHide)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
