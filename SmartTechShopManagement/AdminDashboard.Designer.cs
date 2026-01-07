@@ -90,7 +90,7 @@
             this.pnlLeftDashboard.Controls.Add(this.btnProducts);
             this.pnlLeftDashboard.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeftDashboard.Location = new System.Drawing.Point(0, 0);
-            this.pnlLeftDashboard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlLeftDashboard.Margin = new System.Windows.Forms.Padding(2);
             this.pnlLeftDashboard.Name = "pnlLeftDashboard";
             this.pnlLeftDashboard.Size = new System.Drawing.Size(200, 716);
             this.pnlLeftDashboard.TabIndex = 1;
@@ -100,7 +100,7 @@
             // 
             this.pictureBox5.Image = global::SmartTechShopManagement.Properties.Resources.adminIcon;
             this.pictureBox5.Location = new System.Drawing.Point(18, 2);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(46, 41);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -122,7 +122,7 @@
             // 
             this.pictureBox4.Image = global::SmartTechShopManagement.Properties.Resources.financial_portfolio_icon_with_graph_vector1;
             this.pictureBox4.Location = new System.Drawing.Point(6, 152);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(32, 36);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -133,7 +133,7 @@
             // 
             this.pictureBox3.Image = global::SmartTechShopManagement.Properties.Resources.staffAcc;
             this.pictureBox3.Location = new System.Drawing.Point(2, 193);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 36);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -144,7 +144,7 @@
             // 
             this.pictureBox2.Image = global::SmartTechShopManagement.Properties.Resources.product_manager_icon;
             this.pictureBox2.Location = new System.Drawing.Point(6, 102);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 36);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -155,7 +155,7 @@
             // 
             this.pictureBox1.Image = global::SmartTechShopManagement.Properties.Resources.overviewIcon;
             this.pictureBox1.Location = new System.Drawing.Point(6, 55);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 34);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -168,7 +168,7 @@
             this.button2.BackColor = System.Drawing.SystemColors.Control;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(0, 188);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(200, 46);
             this.button2.TabIndex = 5;
@@ -181,7 +181,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.Control;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(0, 142);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 46);
             this.button1.TabIndex = 4;
@@ -194,7 +194,7 @@
             this.button6.BackColor = System.Drawing.Color.Red;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(0, 834);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(200, 46);
             this.button6.TabIndex = 3;
@@ -207,7 +207,7 @@
             this.button4.BackColor = System.Drawing.SystemColors.Control;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(0, 95);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(200, 46);
             this.button4.TabIndex = 2;
@@ -220,7 +220,7 @@
             this.btnProducts.BackColor = System.Drawing.SystemColors.Control;
             this.btnProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProducts.Location = new System.Drawing.Point(0, 49);
-            this.btnProducts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProducts.Margin = new System.Windows.Forms.Padding(2);
             this.btnProducts.Name = "btnProducts";
             this.btnProducts.Size = new System.Drawing.Size(200, 46);
             this.btnProducts.TabIndex = 1;
@@ -233,7 +233,7 @@
             this.pnlOverview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlOverview.Location = new System.Drawing.Point(200, 0);
             this.pnlOverview.Name = "pnlOverview";
-            this.pnlOverview.Size = new System.Drawing.Size(883, 716);
+            this.pnlOverview.Size = new System.Drawing.Size(1244, 716);
             this.pnlOverview.TabIndex = 2;
             // 
             // pnlProductManagement
@@ -256,7 +256,7 @@
             this.pnlProductManagement.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlProductManagement.Location = new System.Drawing.Point(200, 0);
             this.pnlProductManagement.Name = "pnlProductManagement";
-            this.pnlProductManagement.Size = new System.Drawing.Size(883, 716);
+            this.pnlProductManagement.Size = new System.Drawing.Size(1244, 716);
             this.pnlProductManagement.TabIndex = 0;
             // 
             // cbxProductBrand
@@ -420,7 +420,7 @@
             this.pnlSalesReport.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlSalesReport.Location = new System.Drawing.Point(200, 0);
             this.pnlSalesReport.Name = "pnlSalesReport";
-            this.pnlSalesReport.Size = new System.Drawing.Size(883, 716);
+            this.pnlSalesReport.Size = new System.Drawing.Size(1244, 716);
             this.pnlSalesReport.TabIndex = 0;
             // 
             // pnlStaffAccount
@@ -432,7 +432,7 @@
             this.pnlStaffAccount.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlStaffAccount.Location = new System.Drawing.Point(200, 0);
             this.pnlStaffAccount.Name = "pnlStaffAccount";
-            this.pnlStaffAccount.Size = new System.Drawing.Size(883, 716);
+            this.pnlStaffAccount.Size = new System.Drawing.Size(1244, 716);
             this.pnlStaffAccount.TabIndex = 0;
             // 
             // button5
@@ -481,9 +481,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1083, 716);
-            this.Controls.Add(this.pnlOverview);
+            this.ClientSize = new System.Drawing.Size(1444, 716);
             this.Controls.Add(this.pnlStaffAccount);
+            this.Controls.Add(this.pnlOverview);
             this.Controls.Add(this.pnlProductManagement);
             this.Controls.Add(this.pnlSalesReport);
             this.Controls.Add(this.pnlLeftDashboard);
