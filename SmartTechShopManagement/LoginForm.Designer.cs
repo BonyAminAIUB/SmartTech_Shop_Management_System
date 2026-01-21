@@ -37,7 +37,6 @@
             this.llblForgetPass = new System.Windows.Forms.LinkLabel();
             this.picBoxPassHide = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.cbxLogin = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxPassHide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -150,25 +149,12 @@
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // cbxLogin
-            // 
-            this.cbxLogin.FormattingEnabled = true;
-            this.cbxLogin.Items.AddRange(new object[] {
-            "Admin",
-            "Manager",
-            "Cashier"});
-            this.cbxLogin.Location = new System.Drawing.Point(238, 402);
-            this.cbxLogin.Name = "cbxLogin";
-            this.cbxLogin.Size = new System.Drawing.Size(156, 21);
-            this.cbxLogin.TabIndex = 14;
-            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(666, 458);
-            this.Controls.Add(this.cbxLogin);
             this.Controls.Add(this.llblForgetPass);
             this.Controls.Add(this.btnLogIn);
             this.Controls.Add(this.picBoxPassHide);
@@ -201,7 +187,6 @@
         private System.Windows.Forms.PictureBox picBoxPassHide;
         private System.Windows.Forms.Button btnLogIn;
         private System.Windows.Forms.LinkLabel llblForgetPass;
-        private System.Windows.Forms.ComboBox cbxLogin;
     }
 }
 

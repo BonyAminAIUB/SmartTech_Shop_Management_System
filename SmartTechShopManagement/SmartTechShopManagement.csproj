@@ -94,6 +94,12 @@
     <Compile Include="ManagerDashboard.Designer.cs">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProfile.Designer.cs">
+      <DependentUpon>UpdateProfile.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +130,9 @@
     </Compile>
     <EmbeddedResource Include="ManagerDashboard.resx">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProfile.resx">
+      <DependentUpon>UpdateProfile.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -224,6 +233,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\stockmanagerIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customer icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer small.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Confirm perchase.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

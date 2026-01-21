@@ -20,6 +20,7 @@ namespace SmartTechShopManagement
         {
             InitializeComponent();
         }
+        public static string sharedUsername = "";
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -50,73 +51,77 @@ namespace SmartTechShopManagement
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            //string query = "SELECT empUsername,empPassword, empRole FROM empInfoTb";
-            //Connection connection = new Connection();
-            //DataTable empUnameAndRole = connection.pullForDataTable(query);
+            string query = "SELECT empUsername,empPassword, empRole FROM empInfoTb";
+            Connection connection = new Connection();
+            DataTable empUnameAndRole = connection.pullForDataTable(query);
 
-            //string username, password;
-            //username = txtUserBlank.Text;
-            //password = txtPasswordBlank.Text;
+            string username, password;
+            username = txtUserBlank.Text;
+            password = txtPasswordBlank.Text;
+            sharedUsername = username;
 
-            //bool userfound = false;
-            //int lengthRow = empUnameAndRole.Rows.Count;
+            bool userfound = false;
+            int lengthRow = empUnameAndRole.Rows.Count;
 
-            //for (int i = 0; userfound == false && i<lengthRow ; i += 1)
-            //{
-            //    if (empUnameAndRole.Rows[i]["empUsername"].ToString() == username && empUnameAndRole.Rows[i]["empPassword"].ToString() == password)
-            //    {
-            //        userfound = true;
-            //        if (empUnameAndRole.Rows[i]["empRole"].ToString() == "Admin")
-            //        {
-            //            AdminDashboard adminDashboard = new AdminDashboard();
-            //            adminDashboard.Show();
-            //            this.Hide();
-            //        }
-            //        else if (empUnameAndRole.Rows[i]["empRole"].ToString() == "Manager")
-            //        {
-            //            ManagerDashboard managerDashboard = new ManagerDashboard();
-            //            managerDashboard.Show();
-            //            this.Hide();
-            //        }
-            //        else if (empUnameAndRole.Rows[i]["empRole"].ToString() == "Salesman")
-            //        {
-            //            SalesmanDashboard salesmanDashboard = new SalesmanDashboard();
-            //            salesmanDashboard.Show();
-            //            this.Hide();
-            //        }
-            //        break;
-            //        //else
-            //        //{
-            //        //    MessageBox.Show("")
-            //        //}
-            //    }
-            //    //break;
-            //}
-            //if (userfound == false)
-            //{
-            //    MessageBox.Show("Invalid Username or Password!");
-            //}
+            for (int i = 0; userfound == false && i < lengthRow; i += 1)
+            {
+                if (empUnameAndRole.Rows[i]["empUsername"].ToString() == username && empUnameAndRole.Rows[i]["empPassword"].ToString() == password)
+                {
+                    userfound = true;
+                    if (empUnameAndRole.Rows[i]["empRole"].ToString() == "Admin")
+                    {
+                        AdminDashboard adminDashboard = new AdminDashboard();
+                        adminDashboard.Show();
+                        this.Hide();
+                    }
+                    else if (empUnameAndRole.Rows[i]["empRole"].ToString() == "Manager")
+                    {
+                        ManagerDashboard managerDashboard = new ManagerDashboard();
+                        managerDashboard.Show();
+                        this.Hide();
+                    }
+                    else if (empUnameAndRole.Rows[i]["empRole"].ToString() == "Salesman")
+                    {
+                        SalesmanDashboard salesmanDashboard = new SalesmanDashboard();
+                        salesmanDashboard.Show();
+                        this.Hide();
+                    }
+                    break;
+                    //else
+                    //{
+                    //    MessageBox.Show("")
+                    //}
+                }
+
+                //break;
+            }
+            string query2 = "insert into loginTrackingTb (username, loginTime) values ('" + username + "', '" + DateTime.Now.ToString() + "')";
+            connection.push(query2);
+            if (userfound == false)
+            {
+                MessageBox.Show("Invalid Username or Password!");
+            }
 
             //simple login
-            string role = cbxLogin.Text;
-            if(role == "Admin")
-            {
-                AdminDashboard adminDashboard = new AdminDashboard();
-                adminDashboard.Show();
-                this.Hide();
-            }
-            else if(role == "Manager")
-            {
-                ManagerDashboard managerDashboard = new ManagerDashboard();
-                managerDashboard.Show();
-                this.Hide();
-            }
-            else if (role == "Salesman")
-            {
-                SalesmanDashboard salesmanDashboard = new SalesmanDashboard();
-                salesmanDashboard.Show();
-                this.Hide();
-            }
+            //string role = cbxLogin.Text;
+            //if(role == "Admin")
+            //{
+            //    AdminDashboard adminDashboard = new AdminDashboard();
+            //    adminDashboard.Show();
+            //    this.Hide();
+            //}
+            //else if(role == "Manager")
+            //{
+            //    ManagerDashboard managerDashboard = new ManagerDashboard();
+            //    managerDashboard.Show();
+            //    this.Hide();
+            //}
+            //else if (role == "Salesman")
+            //{
+            //    SalesmanDashboard salesmanDashboard = new SalesmanDashboard();
+            //    salesmanDashboard.Show();
+            //    this.Hide();
+            //}
         }
 
         private void llblForgetPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
