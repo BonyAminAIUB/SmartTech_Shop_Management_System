@@ -564,10 +564,10 @@ namespace SmartTechShopManagement
             int price = int.Parse(txtOrderPrice.Text);
             int quantity = int.Parse(txtOrderQuantity.Text);
             Connection connection = new Connection();
-            string query = $"insert into productInfoTb (ProductName, productModel, ProductBrand, ProductCatagory, ProductPrice, ProductQuantity, productWarrenty, ProductAddingDate, productStockStatus, productOrderedDate) values ('"+txtProductName.Text+"','"+txtOrderModel.Text+"','"+txtOrderBrand.Text+"','"+txtOrderCatagory.Text+"','"+price+"','"+quantity+"','"+txtOrderWarrenty.Text+"','"+DateTime.Now.ToString()+ "','Peinding Approval','" + DateTime.Now.ToString() + "')"; 
+            string query = $"insert into productInfoTb (ProductName, productModel, ProductBrand, ProductCatagory, ProductPrice, ProductQuantity, productWarrenty, ProductAddingDate, productStockStatus, productOrderedDate) values ('"+txtProductName.Text+"','"+txtOrderModel.Text+"','"+txtOrderBrand.Text+"','"+txtOrderCatagory.Text+"','"+price+"','"+quantity+"','"+txtOrderWarrenty.Text+"','"+DateTime.Now.ToString()+ "','Pending Approval','" + DateTime.Now.ToString() + "')"; 
             connection.push(query);
 
-            string query2 = "select * from productInfoTb where productStockStatus = 'Peinding Approval'";
+            string query2 = "select * from productInfoTb where productStockStatus = 'Pending Approval'";
             dgvOrderManagement.DataSource =  connection.pullForDataTable(query2);
         }
 
@@ -585,7 +585,7 @@ namespace SmartTechShopManagement
             string query = $"select productStockStatus from productInfoTb where ProductName = '{txtName.Text}'";
             DataTable dt = connection.pullForDataTable(query);
             string stockStatus = dt.Rows[0]["productStockStatus"].ToString();
-            if (stockStatus == "Peinding Approval")
+            if (stockStatus == "Pending Approval")
             {
                 MessageBox.Show("Product Needs Admins Approval First!");
             }
@@ -602,7 +602,7 @@ namespace SmartTechShopManagement
             string query = "delete from productInfoTb where ProductName = '" + txtName.Text + "'";
             connection.push(query);
             
-            string query2 = "select * from productInfoTb where productStockStatus = 'Peinding Approval'";
+            string query2 = "select * from productInfoTb where productStockStatus = 'Pending Approval'";
             dgvOrderManagement.DataSource = connection.pullForDataTable(query2);
         }
 

@@ -358,5 +358,36 @@ namespace SmartTechShopManagement
         {
 
         }
+
+        private void btnPeindingApproval_Click(object sender, EventArgs e)
+        {
+            Connection connection = new Connection();   
+            string query = "select * from productInfoTb where productStockStatus = 'Pending Approval'";
+            dgvProductManagement.DataSource = connection.pullForDataTable(query);
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvProductManagement_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtPendingApproval.Text = dgvProductManagement.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtPendingAppPrice.Text = dgvProductManagement.Rows[e.RowIndex].Cells[5].Value.ToString();
+            txtPendingAppQuantity.Text = dgvProductManagement.Rows[e.RowIndex].Cells[6].Value.ToString();
+            int total = Convert.ToInt32(txtPendingAppPrice.Text) * Convert.ToInt32( txtPendingAppQuantity.Text);
+            txtPendinAppTotal.Text = total.ToString();
+        }
+
+        private void button8_Click_2(object sender, EventArgs e)
+        {
+            Connection connection = new Connection();
+            string query = "update productInfoTb set productStockStatus='Ordered' where productName='"+txtPendingApproval.Text+"'";
+            connection.push(query);
+            MessageBox.Show("Product Approved and Ordered!");
+
+            dgvProductManagement.DataSource = connection.pullForDataTable("select * from productInfoTb where productStockStatus = 'Ordered'");
+        }
     }
 }

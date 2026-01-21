@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pnlLeftDashboard = new System.Windows.Forms.Panel();
             this.btnStockAlart = new System.Windows.Forms.Button();
             this.cbxNotification = new System.Windows.Forms.CheckBox();
@@ -62,6 +62,7 @@
             this.lblAddShow = new System.Windows.Forms.Label();
             this.lblAddProduct = new System.Windows.Forms.Label();
             this.pnlProfile = new System.Windows.Forms.Panel();
+            this.lblProfileDescription = new System.Windows.Forms.Label();
             this.txtProfileDOB = new System.Windows.Forms.TextBox();
             this.txtProfileQua = new System.Windows.Forms.TextBox();
             this.txtProfileRole = new System.Windows.Forms.TextBox();
@@ -84,6 +85,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pnlUpdateInfo = new System.Windows.Forms.Panel();
+            this.label29 = new System.Windows.Forms.Label();
             this.txtUpdateProfileRole = new System.Windows.Forms.TextBox();
             this.cbxRegQualificatioin = new System.Windows.Forms.ComboBox();
             this.label25 = new System.Windows.Forms.Label();
@@ -195,6 +197,7 @@
             this.pnlUpperlbl = new System.Windows.Forms.Panel();
             this.label33 = new System.Windows.Forms.Label();
             this.pnlOrderDetails = new System.Windows.Forms.Panel();
+            this.lblOrderDetails = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.txtQuantity = new System.Windows.Forms.TextBox();
@@ -210,9 +213,6 @@
             this.lblOrderQuantity = new System.Windows.Forms.Label();
             this.lblProductName = new System.Windows.Forms.Label();
             this.lblOrderManagement = new System.Windows.Forms.Label();
-            this.lblProfileDescription = new System.Windows.Forms.Label();
-            this.lblOrderDetails = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
             this.pnlLeftDashboard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNotification)).BeginInit();
             this.pnlUpdateStock.SuspendLayout();
@@ -658,6 +658,17 @@
             this.pnlProfile.TabIndex = 12;
             this.pnlProfile.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlProfile_Paint);
             // 
+            // lblProfileDescription
+            // 
+            this.lblProfileDescription.AutoSize = true;
+            this.lblProfileDescription.BackColor = System.Drawing.Color.Cyan;
+            this.lblProfileDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProfileDescription.Location = new System.Drawing.Point(545, 68);
+            this.lblProfileDescription.Name = "lblProfileDescription";
+            this.lblProfileDescription.Size = new System.Drawing.Size(225, 24);
+            this.lblProfileDescription.TabIndex = 53;
+            this.lblProfileDescription.Text = "Manager Profile Details";
+            // 
             // txtProfileDOB
             // 
             this.txtProfileDOB.Location = new System.Drawing.Point(664, 555);
@@ -924,6 +935,16 @@
             this.pnlUpdateInfo.Name = "pnlUpdateInfo";
             this.pnlUpdateInfo.Size = new System.Drawing.Size(1244, 845);
             this.pnlUpdateInfo.TabIndex = 46;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(492, 66);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(196, 24);
+            this.label29.TabIndex = 55;
+            this.label29.Text = "Update Profile Form";
             // 
             // txtUpdateProfileRole
             // 
@@ -2044,19 +2065,19 @@
             // 
             // chartDashBoard
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartDashBoard.ChartAreas.Add(chartArea4);
+            chartArea1.Name = "ChartArea1";
+            this.chartDashBoard.ChartAreas.Add(chartArea1);
             this.chartDashBoard.Cursor = System.Windows.Forms.Cursors.IBeam;
-            legend4.Name = "Legend1";
-            this.chartDashBoard.Legends.Add(legend4);
+            legend1.Name = "Legend1";
+            this.chartDashBoard.Legends.Add(legend1);
             this.chartDashBoard.Location = new System.Drawing.Point(16, 244);
             this.chartDashBoard.Margin = new System.Windows.Forms.Padding(2);
             this.chartDashBoard.Name = "chartDashBoard";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series4.Legend = "Legend1";
-            series4.Name = "Series";
-            this.chartDashBoard.Series.Add(series4);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Legend = "Legend1";
+            series1.Name = "Series";
+            this.chartDashBoard.Series.Add(series1);
             this.chartDashBoard.Size = new System.Drawing.Size(677, 586);
             this.chartDashBoard.TabIndex = 10;
             this.chartDashBoard.Text = "PiSalesReport";
@@ -2277,6 +2298,16 @@
             this.pnlOrderDetails.Size = new System.Drawing.Size(395, 410);
             this.pnlOrderDetails.TabIndex = 9;
             // 
+            // lblOrderDetails
+            // 
+            this.lblOrderDetails.AutoSize = true;
+            this.lblOrderDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrderDetails.Location = new System.Drawing.Point(132, 41);
+            this.lblOrderDetails.Name = "lblOrderDetails";
+            this.lblOrderDetails.Size = new System.Drawing.Size(132, 24);
+            this.lblOrderDetails.TabIndex = 19;
+            this.lblOrderDetails.Text = "Order Details";
+            // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.OrangeRed;
@@ -2429,49 +2460,18 @@
             this.lblOrderManagement.TabIndex = 0;
             this.lblOrderManagement.Text = "Order Management";
             // 
-            // lblProfileDescription
-            // 
-            this.lblProfileDescription.AutoSize = true;
-            this.lblProfileDescription.BackColor = System.Drawing.Color.Cyan;
-            this.lblProfileDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProfileDescription.Location = new System.Drawing.Point(545, 68);
-            this.lblProfileDescription.Name = "lblProfileDescription";
-            this.lblProfileDescription.Size = new System.Drawing.Size(225, 24);
-            this.lblProfileDescription.TabIndex = 53;
-            this.lblProfileDescription.Text = "Manager Profile Details";
-            // 
-            // lblOrderDetails
-            // 
-            this.lblOrderDetails.AutoSize = true;
-            this.lblOrderDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrderDetails.Location = new System.Drawing.Point(132, 41);
-            this.lblOrderDetails.Name = "lblOrderDetails";
-            this.lblOrderDetails.Size = new System.Drawing.Size(132, 24);
-            this.lblOrderDetails.TabIndex = 19;
-            this.lblOrderDetails.Text = "Order Details";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(492, 66);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(196, 24);
-            this.label29.TabIndex = 55;
-            this.label29.Text = "Update Profile Form";
-            // 
             // ManagerDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1444, 845);
+            this.Controls.Add(this.pnlOrderManagement);
             this.Controls.Add(this.pnlManagerDashBoard);
             this.Controls.Add(this.pnlProfile);
             this.Controls.Add(this.pnlStockAlart);
             this.Controls.Add(this.pnlUpdateStock);
             this.Controls.Add(this.pnlUpdateInfo);
             this.Controls.Add(this.pnlDeleteProduct);
-            this.Controls.Add(this.pnlOrderManagement);
             this.Controls.Add(this.pnlAddProduct);
             this.Controls.Add(this.pnlLeftDashboard);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
