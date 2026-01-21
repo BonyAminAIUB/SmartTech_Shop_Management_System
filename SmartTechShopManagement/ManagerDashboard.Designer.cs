@@ -28,17 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pnlLeftDashboard = new System.Windows.Forms.Panel();
+            this.btnStockAlart = new System.Windows.Forms.Button();
             this.cbxNotification = new System.Windows.Forms.CheckBox();
+            this.btnDeleteProduct = new System.Windows.Forms.Button();
             this.dgvNotification = new System.Windows.Forms.DataGridView();
+            this.btnUpdateProduct = new System.Windows.Forms.Button();
             this.btnOrderMangement = new System.Windows.Forms.Button();
             this.btnDashBoard = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.btnProfile = new System.Windows.Forms.Button();
-            this.btnProductManagement = new System.Windows.Forms.Button();
             this.pnlUpdateStock = new System.Windows.Forms.Panel();
             this.txtUpdateWarrenty = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -105,11 +107,6 @@
             this.lblUpdateDOB = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.pnlProductManagement = new System.Windows.Forms.Panel();
-            this.btnStockAlart = new System.Windows.Forms.Button();
-            this.btnDeleteProduct = new System.Windows.Forms.Button();
-            this.btnUpdateProduct = new System.Windows.Forms.Button();
-            this.btnAddProducts = new System.Windows.Forms.Button();
             this.pnlAddProduct = new System.Windows.Forms.Panel();
             this.txtAddWarrenty = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -165,7 +162,8 @@
             this.gridOutOfStock = new System.Windows.Forms.DataGridView();
             this.btnStockBack = new System.Windows.Forms.Button();
             this.pnlManagerDashBoard = new System.Windows.Forms.Panel();
-            this.dtGridDashBoardShow = new System.Windows.Forms.DataGridView();
+            this.lblLowStockManager = new System.Windows.Forms.Label();
+            this.dgvLowStockManager = new System.Windows.Forms.DataGridView();
             this.lblLowStock = new System.Windows.Forms.Label();
             this.gridViewLowStock = new System.Windows.Forms.DataGridView();
             this.lblDailySales = new System.Windows.Forms.Label();
@@ -180,6 +178,17 @@
             this.chartDashBoard = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.lblDashBoardMSG = new System.Windows.Forms.Label();
             this.pnlOrderManagement = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.txtOrderWarrenty = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.txtOrderPrice = new System.Windows.Forms.TextBox();
+            this.txtOrderCatagory = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.txtOrderBrand = new System.Windows.Forms.TextBox();
+            this.txtOrderModel = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.pnlUpperOrderList = new System.Windows.Forms.Panel();
             this.lblOrderList = new System.Windows.Forms.Label();
             this.dgvOrderManagement = new System.Windows.Forms.DataGridView();
@@ -202,24 +211,12 @@
             this.lblOrderQuantity = new System.Windows.Forms.Label();
             this.lblProductName = new System.Windows.Forms.Label();
             this.lblOrderManagement = new System.Windows.Forms.Label();
-            this.txtOrderBrand = new System.Windows.Forms.TextBox();
-            this.txtOrderModel = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.txtOrderPrice = new System.Windows.Forms.TextBox();
-            this.txtOrderCatagory = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.txtOrderWarrenty = new System.Windows.Forms.TextBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
             this.pnlLeftDashboard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNotification)).BeginInit();
             this.pnlUpdateStock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUpdateProduct)).BeginInit();
             this.pnlProfile.SuspendLayout();
             this.pnlUpdateInfo.SuspendLayout();
-            this.pnlProductManagement.SuspendLayout();
             this.pnlAddProduct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAddProduct)).BeginInit();
             this.pnlDeleteProduct.SuspendLayout();
@@ -230,7 +227,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridTotalInventory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridOutOfStock)).BeginInit();
             this.pnlManagerDashBoard.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtGridDashBoardShow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLowStockManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewLowStock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewLowDailySales)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewLowMontlySales)).BeginInit();
@@ -246,13 +243,15 @@
             // pnlLeftDashboard
             // 
             this.pnlLeftDashboard.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.pnlLeftDashboard.Controls.Add(this.btnStockAlart);
             this.pnlLeftDashboard.Controls.Add(this.cbxNotification);
+            this.pnlLeftDashboard.Controls.Add(this.btnDeleteProduct);
             this.pnlLeftDashboard.Controls.Add(this.dgvNotification);
+            this.pnlLeftDashboard.Controls.Add(this.btnUpdateProduct);
             this.pnlLeftDashboard.Controls.Add(this.btnOrderMangement);
             this.pnlLeftDashboard.Controls.Add(this.btnDashBoard);
             this.pnlLeftDashboard.Controls.Add(this.button6);
             this.pnlLeftDashboard.Controls.Add(this.btnProfile);
-            this.pnlLeftDashboard.Controls.Add(this.btnProductManagement);
             this.pnlLeftDashboard.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeftDashboard.Location = new System.Drawing.Point(0, 0);
             this.pnlLeftDashboard.Margin = new System.Windows.Forms.Padding(2);
@@ -260,11 +259,22 @@
             this.pnlLeftDashboard.Size = new System.Drawing.Size(200, 845);
             this.pnlLeftDashboard.TabIndex = 2;
             // 
+            // btnStockAlart
+            // 
+            this.btnStockAlart.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStockAlart.Location = new System.Drawing.Point(0, 136);
+            this.btnStockAlart.Name = "btnStockAlart";
+            this.btnStockAlart.Size = new System.Drawing.Size(200, 46);
+            this.btnStockAlart.TabIndex = 3;
+            this.btnStockAlart.Text = "Stock Alart";
+            this.btnStockAlart.UseVisualStyleBackColor = true;
+            this.btnStockAlart.Click += new System.EventHandler(this.btnStockAlart_Click);
+            // 
             // cbxNotification
             // 
             this.cbxNotification.Appearance = System.Windows.Forms.Appearance.Button;
             this.cbxNotification.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxNotification.Location = new System.Drawing.Point(5, 286);
+            this.cbxNotification.Location = new System.Drawing.Point(5, 345);
             this.cbxNotification.Name = "cbxNotification";
             this.cbxNotification.Size = new System.Drawing.Size(191, 34);
             this.cbxNotification.TabIndex = 20;
@@ -273,22 +283,44 @@
             this.cbxNotification.UseVisualStyleBackColor = true;
             this.cbxNotification.CheckedChanged += new System.EventHandler(this.cbxNotification_CheckedChanged);
             // 
+            // btnDeleteProduct
+            // 
+            this.btnDeleteProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteProduct.Location = new System.Drawing.Point(0, 88);
+            this.btnDeleteProduct.Name = "btnDeleteProduct";
+            this.btnDeleteProduct.Size = new System.Drawing.Size(200, 48);
+            this.btnDeleteProduct.TabIndex = 2;
+            this.btnDeleteProduct.Text = "Delete Product";
+            this.btnDeleteProduct.UseVisualStyleBackColor = true;
+            this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
+            // 
             // dgvNotification
             // 
             this.dgvNotification.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvNotification.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvNotification.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNotification.Location = new System.Drawing.Point(5, 332);
+            this.dgvNotification.Location = new System.Drawing.Point(5, 391);
             this.dgvNotification.Name = "dgvNotification";
             this.dgvNotification.Size = new System.Drawing.Size(191, 201);
             this.dgvNotification.TabIndex = 19;
             this.dgvNotification.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNotification_CellContentClick);
             // 
+            // btnUpdateProduct
+            // 
+            this.btnUpdateProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateProduct.Location = new System.Drawing.Point(0, 45);
+            this.btnUpdateProduct.Name = "btnUpdateProduct";
+            this.btnUpdateProduct.Size = new System.Drawing.Size(200, 46);
+            this.btnUpdateProduct.TabIndex = 1;
+            this.btnUpdateProduct.Text = "Update Product";
+            this.btnUpdateProduct.UseVisualStyleBackColor = true;
+            this.btnUpdateProduct.Click += new System.EventHandler(this.btnUpdateProduct_Click);
+            // 
             // btnOrderMangement
             // 
             this.btnOrderMangement.BackColor = System.Drawing.SystemColors.Control;
             this.btnOrderMangement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrderMangement.Location = new System.Drawing.Point(2, 138);
+            this.btnOrderMangement.Location = new System.Drawing.Point(2, 247);
             this.btnOrderMangement.Margin = new System.Windows.Forms.Padding(2);
             this.btnOrderMangement.Name = "btnOrderMangement";
             this.btnOrderMangement.Size = new System.Drawing.Size(200, 46);
@@ -313,7 +345,7 @@
             // 
             this.button6.BackColor = System.Drawing.Color.Red;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(2, 184);
+            this.button6.Location = new System.Drawing.Point(2, 293);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(200, 46);
@@ -326,7 +358,7 @@
             // 
             this.btnProfile.BackColor = System.Drawing.SystemColors.Control;
             this.btnProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProfile.Location = new System.Drawing.Point(0, 91);
+            this.btnProfile.Location = new System.Drawing.Point(0, 200);
             this.btnProfile.Margin = new System.Windows.Forms.Padding(2);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.Size = new System.Drawing.Size(200, 46);
@@ -334,19 +366,6 @@
             this.btnProfile.Text = "Profile";
             this.btnProfile.UseVisualStyleBackColor = false;
             this.btnProfile.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // btnProductManagement
-            // 
-            this.btnProductManagement.BackColor = System.Drawing.SystemColors.Control;
-            this.btnProductManagement.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProductManagement.Location = new System.Drawing.Point(0, 45);
-            this.btnProductManagement.Margin = new System.Windows.Forms.Padding(2);
-            this.btnProductManagement.Name = "btnProductManagement";
-            this.btnProductManagement.Size = new System.Drawing.Size(200, 46);
-            this.btnProductManagement.TabIndex = 1;
-            this.btnProductManagement.Text = "Product-Management";
-            this.btnProductManagement.UseVisualStyleBackColor = false;
-            this.btnProductManagement.Click += new System.EventHandler(this.btnProducts_Click);
             // 
             // pnlUpdateStock
             // 
@@ -371,9 +390,9 @@
             this.pnlUpdateStock.Controls.Add(this.lblAddShow);
             this.pnlUpdateStock.Controls.Add(this.lblAddProduct);
             this.pnlUpdateStock.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlUpdateStock.Location = new System.Drawing.Point(0, 0);
+            this.pnlUpdateStock.Location = new System.Drawing.Point(200, 0);
             this.pnlUpdateStock.Name = "pnlUpdateStock";
-            this.pnlUpdateStock.Size = new System.Drawing.Size(1444, 845);
+            this.pnlUpdateStock.Size = new System.Drawing.Size(1244, 845);
             this.pnlUpdateStock.TabIndex = 0;
             // 
             // txtUpdateWarrenty
@@ -888,9 +907,9 @@
             this.pnlUpdateInfo.Controls.Add(this.lblUpdateDOB);
             this.pnlUpdateInfo.Controls.Add(this.btnBack);
             this.pnlUpdateInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlUpdateInfo.Location = new System.Drawing.Point(0, 0);
+            this.pnlUpdateInfo.Location = new System.Drawing.Point(200, 0);
             this.pnlUpdateInfo.Name = "pnlUpdateInfo";
-            this.pnlUpdateInfo.Size = new System.Drawing.Size(1444, 845);
+            this.pnlUpdateInfo.Size = new System.Drawing.Size(1244, 845);
             this.pnlUpdateInfo.TabIndex = 46;
             // 
             // txtUpdateProfileRole
@@ -1141,62 +1160,6 @@
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // pnlProductManagement
-            // 
-            this.pnlProductManagement.Controls.Add(this.btnStockAlart);
-            this.pnlProductManagement.Controls.Add(this.btnDeleteProduct);
-            this.pnlProductManagement.Controls.Add(this.btnUpdateProduct);
-            this.pnlProductManagement.Controls.Add(this.btnAddProducts);
-            this.pnlProductManagement.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlProductManagement.Location = new System.Drawing.Point(0, 0);
-            this.pnlProductManagement.Name = "pnlProductManagement";
-            this.pnlProductManagement.Size = new System.Drawing.Size(1444, 845);
-            this.pnlProductManagement.TabIndex = 22;
-            // 
-            // btnStockAlart
-            // 
-            this.btnStockAlart.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStockAlart.Location = new System.Drawing.Point(555, 136);
-            this.btnStockAlart.Name = "btnStockAlart";
-            this.btnStockAlart.Size = new System.Drawing.Size(95, 46);
-            this.btnStockAlart.TabIndex = 3;
-            this.btnStockAlart.Text = "Stock Alart";
-            this.btnStockAlart.UseVisualStyleBackColor = true;
-            this.btnStockAlart.Click += new System.EventHandler(this.btnStockAlart_Click);
-            // 
-            // btnDeleteProduct
-            // 
-            this.btnDeleteProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteProduct.Location = new System.Drawing.Point(420, 134);
-            this.btnDeleteProduct.Name = "btnDeleteProduct";
-            this.btnDeleteProduct.Size = new System.Drawing.Size(93, 48);
-            this.btnDeleteProduct.TabIndex = 2;
-            this.btnDeleteProduct.Text = "Delete Product";
-            this.btnDeleteProduct.UseVisualStyleBackColor = true;
-            this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
-            // 
-            // btnUpdateProduct
-            // 
-            this.btnUpdateProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateProduct.Location = new System.Drawing.Point(270, 134);
-            this.btnUpdateProduct.Name = "btnUpdateProduct";
-            this.btnUpdateProduct.Size = new System.Drawing.Size(97, 46);
-            this.btnUpdateProduct.TabIndex = 1;
-            this.btnUpdateProduct.Text = "Update Product";
-            this.btnUpdateProduct.UseVisualStyleBackColor = true;
-            this.btnUpdateProduct.Click += new System.EventHandler(this.btnUpdateProduct_Click);
-            // 
-            // btnAddProducts
-            // 
-            this.btnAddProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddProducts.Location = new System.Drawing.Point(113, 131);
-            this.btnAddProducts.Name = "btnAddProducts";
-            this.btnAddProducts.Size = new System.Drawing.Size(95, 46);
-            this.btnAddProducts.TabIndex = 0;
-            this.btnAddProducts.Text = "Add Product";
-            this.btnAddProducts.UseVisualStyleBackColor = true;
-            this.btnAddProducts.Click += new System.EventHandler(this.button1_Click);
             // 
             // pnlAddProduct
             // 
@@ -1468,9 +1431,9 @@
             this.pnlDeleteProduct.Controls.Add(this.lblDeletePrice);
             this.pnlDeleteProduct.Controls.Add(this.label6);
             this.pnlDeleteProduct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlDeleteProduct.Location = new System.Drawing.Point(0, 0);
+            this.pnlDeleteProduct.Location = new System.Drawing.Point(200, 0);
             this.pnlDeleteProduct.Name = "pnlDeleteProduct";
-            this.pnlDeleteProduct.Size = new System.Drawing.Size(1444, 845);
+            this.pnlDeleteProduct.Size = new System.Drawing.Size(1244, 845);
             this.pnlDeleteProduct.TabIndex = 4;
             // 
             // txtDeleteWarrenty
@@ -1870,7 +1833,8 @@
             // 
             // pnlManagerDashBoard
             // 
-            this.pnlManagerDashBoard.Controls.Add(this.dtGridDashBoardShow);
+            this.pnlManagerDashBoard.Controls.Add(this.lblLowStockManager);
+            this.pnlManagerDashBoard.Controls.Add(this.dgvLowStockManager);
             this.pnlManagerDashBoard.Controls.Add(this.lblLowStock);
             this.pnlManagerDashBoard.Controls.Add(this.gridViewLowStock);
             this.pnlManagerDashBoard.Controls.Add(this.lblDailySales);
@@ -1891,25 +1855,38 @@
             this.pnlManagerDashBoard.TabIndex = 4;
             this.pnlManagerDashBoard.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlManagerDashBoard_Paint);
             // 
-            // dtGridDashBoardShow
+            // lblLowStockManager
             // 
-            this.dtGridDashBoardShow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtGridDashBoardShow.Location = new System.Drawing.Point(717, 248);
-            this.dtGridDashBoardShow.Name = "dtGridDashBoardShow";
-            this.dtGridDashBoardShow.Size = new System.Drawing.Size(502, 594);
-            this.dtGridDashBoardShow.TabIndex = 22;
+            this.lblLowStockManager.AutoSize = true;
+            this.lblLowStockManager.BackColor = System.Drawing.Color.PaleGreen;
+            this.lblLowStockManager.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLowStockManager.Location = new System.Drawing.Point(985, 115);
+            this.lblLowStockManager.Name = "lblLowStockManager";
+            this.lblLowStockManager.Size = new System.Drawing.Size(49, 20);
+            this.lblLowStockManager.TabIndex = 23;
+            this.lblLowStockManager.Text = "0000";
+            this.lblLowStockManager.Click += new System.EventHandler(this.lblLowStockManager_Click);
+            // 
+            // dgvLowStockManager
+            // 
+            this.dgvLowStockManager.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLowStockManager.Location = new System.Drawing.Point(717, 248);
+            this.dgvLowStockManager.Name = "dgvLowStockManager";
+            this.dgvLowStockManager.Size = new System.Drawing.Size(502, 594);
+            this.dgvLowStockManager.TabIndex = 22;
             // 
             // lblLowStock
             // 
             this.lblLowStock.AutoSize = true;
             this.lblLowStock.BackColor = System.Drawing.Color.PaleGreen;
             this.lblLowStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLowStock.Location = new System.Drawing.Point(974, 98);
+            this.lblLowStock.Location = new System.Drawing.Point(974, 85);
             this.lblLowStock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLowStock.Name = "lblLowStock";
             this.lblLowStock.Size = new System.Drawing.Size(81, 17);
             this.lblLowStock.TabIndex = 21;
             this.lblLowStock.Text = "Low Stock";
+            this.lblLowStock.Click += new System.EventHandler(this.lblLowStock_Click);
             // 
             // gridViewLowStock
             // 
@@ -2030,18 +2007,19 @@
             // 
             // chartDashBoard
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartDashBoard.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartDashBoard.Legends.Add(legend2);
+            chartArea8.Name = "ChartArea1";
+            this.chartDashBoard.ChartAreas.Add(chartArea8);
+            this.chartDashBoard.Cursor = System.Windows.Forms.Cursors.IBeam;
+            legend8.Name = "Legend1";
+            this.chartDashBoard.Legends.Add(legend8);
             this.chartDashBoard.Location = new System.Drawing.Point(33, 248);
             this.chartDashBoard.Margin = new System.Windows.Forms.Padding(2);
             this.chartDashBoard.Name = "chartDashBoard";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series2.Legend = "Legend1";
-            series2.Name = "SalesReport";
-            this.chartDashBoard.Series.Add(series2);
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series8.Legend = "Legend1";
+            series8.Name = "Series";
+            this.chartDashBoard.Series.Add(series8);
             this.chartDashBoard.Size = new System.Drawing.Size(651, 586);
             this.chartDashBoard.TabIndex = 10;
             this.chartDashBoard.Text = "PiSalesReport";
@@ -2086,6 +2064,106 @@
             this.pnlOrderManagement.Name = "pnlOrderManagement";
             this.pnlOrderManagement.Size = new System.Drawing.Size(1244, 845);
             this.pnlOrderManagement.TabIndex = 55;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(698, 244);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(109, 29);
+            this.button5.TabIndex = 32;
+            this.button5.Text = "Order Entry";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            // 
+            // txtOrderWarrenty
+            // 
+            this.txtOrderWarrenty.Location = new System.Drawing.Point(740, 197);
+            this.txtOrderWarrenty.Name = "txtOrderWarrenty";
+            this.txtOrderWarrenty.Size = new System.Drawing.Size(100, 22);
+            this.txtOrderWarrenty.TabIndex = 31;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(661, 194);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(73, 20);
+            this.label35.TabIndex = 29;
+            this.label35.Text = "Warrenty";
+            // 
+            // txtOrderPrice
+            // 
+            this.txtOrderPrice.Location = new System.Drawing.Point(551, 238);
+            this.txtOrderPrice.Name = "txtOrderPrice";
+            this.txtOrderPrice.Size = new System.Drawing.Size(100, 22);
+            this.txtOrderPrice.TabIndex = 24;
+            // 
+            // txtOrderCatagory
+            // 
+            this.txtOrderCatagory.Location = new System.Drawing.Point(548, 192);
+            this.txtOrderCatagory.Name = "txtOrderCatagory";
+            this.txtOrderCatagory.Size = new System.Drawing.Size(100, 22);
+            this.txtOrderCatagory.TabIndex = 23;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(471, 238);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(44, 20);
+            this.label31.TabIndex = 22;
+            this.label31.Text = "Price";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(431, 192);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(73, 20);
+            this.label32.TabIndex = 21;
+            this.label32.Text = "Catagory";
+            // 
+            // txtOrderBrand
+            // 
+            this.txtOrderBrand.Location = new System.Drawing.Point(311, 238);
+            this.txtOrderBrand.Name = "txtOrderBrand";
+            this.txtOrderBrand.Size = new System.Drawing.Size(100, 22);
+            this.txtOrderBrand.TabIndex = 20;
+            // 
+            // txtOrderModel
+            // 
+            this.txtOrderModel.Location = new System.Drawing.Point(310, 192);
+            this.txtOrderModel.Name = "txtOrderModel";
+            this.txtOrderModel.Size = new System.Drawing.Size(100, 22);
+            this.txtOrderModel.TabIndex = 19;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(256, 238);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(52, 20);
+            this.label26.TabIndex = 18;
+            this.label26.Text = "Brand";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(256, 192);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(52, 20);
+            this.label27.TabIndex = 17;
+            this.label27.Text = "Model";
             // 
             // pnlUpperOrderList
             // 
@@ -2165,6 +2243,7 @@
             this.button4.TabIndex = 18;
             this.button4.Text = "Cancel Order";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // button3
             // 
@@ -2307,121 +2386,20 @@
             this.lblOrderManagement.TabIndex = 0;
             this.lblOrderManagement.Text = "Order Management";
             // 
-            // txtOrderBrand
-            // 
-            this.txtOrderBrand.Location = new System.Drawing.Point(311, 238);
-            this.txtOrderBrand.Name = "txtOrderBrand";
-            this.txtOrderBrand.Size = new System.Drawing.Size(100, 22);
-            this.txtOrderBrand.TabIndex = 20;
-            // 
-            // txtOrderModel
-            // 
-            this.txtOrderModel.Location = new System.Drawing.Point(310, 192);
-            this.txtOrderModel.Name = "txtOrderModel";
-            this.txtOrderModel.Size = new System.Drawing.Size(100, 22);
-            this.txtOrderModel.TabIndex = 19;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(256, 238);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(52, 20);
-            this.label26.TabIndex = 18;
-            this.label26.Text = "Brand";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(256, 192);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(52, 20);
-            this.label27.TabIndex = 17;
-            this.label27.Text = "Model";
-            // 
-            // txtOrderPrice
-            // 
-            this.txtOrderPrice.Location = new System.Drawing.Point(551, 238);
-            this.txtOrderPrice.Name = "txtOrderPrice";
-            this.txtOrderPrice.Size = new System.Drawing.Size(100, 22);
-            this.txtOrderPrice.TabIndex = 24;
-            // 
-            // txtOrderCatagory
-            // 
-            this.txtOrderCatagory.Location = new System.Drawing.Point(548, 192);
-            this.txtOrderCatagory.Name = "txtOrderCatagory";
-            this.txtOrderCatagory.Size = new System.Drawing.Size(100, 22);
-            this.txtOrderCatagory.TabIndex = 23;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(471, 238);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(44, 20);
-            this.label31.TabIndex = 22;
-            this.label31.Text = "Price";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(431, 192);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(73, 20);
-            this.label32.TabIndex = 21;
-            this.label32.Text = "Catagory";
-            // 
-            // txtOrderWarrenty
-            // 
-            this.txtOrderWarrenty.Location = new System.Drawing.Point(740, 197);
-            this.txtOrderWarrenty.Name = "txtOrderWarrenty";
-            this.txtOrderWarrenty.Size = new System.Drawing.Size(100, 22);
-            this.txtOrderWarrenty.TabIndex = 31;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(661, 194);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(73, 20);
-            this.label35.TabIndex = 29;
-            this.label35.Text = "Warrenty";
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(698, 244);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(109, 29);
-            this.button5.TabIndex = 32;
-            this.button5.Text = "Order Entry";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click_1);
-            // 
             // ManagerDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1444, 845);
-            this.Controls.Add(this.pnlOrderManagement);
-            this.Controls.Add(this.pnlManagerDashBoard);
             this.Controls.Add(this.pnlStockAlart);
-            this.Controls.Add(this.pnlAddProduct);
-            this.Controls.Add(this.pnlLeftDashboard);
+            this.Controls.Add(this.pnlManagerDashBoard);
+            this.Controls.Add(this.pnlUpdateStock);
             this.Controls.Add(this.pnlUpdateInfo);
             this.Controls.Add(this.pnlDeleteProduct);
+            this.Controls.Add(this.pnlOrderManagement);
+            this.Controls.Add(this.pnlAddProduct);
+            this.Controls.Add(this.pnlLeftDashboard);
             this.Controls.Add(this.pnlProfile);
-            this.Controls.Add(this.pnlUpdateStock);
-            this.Controls.Add(this.pnlProductManagement);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "ManagerDashboard";
             this.Text = "Stoc kManager Dashboard";
@@ -2435,7 +2413,6 @@
             this.pnlProfile.PerformLayout();
             this.pnlUpdateInfo.ResumeLayout(false);
             this.pnlUpdateInfo.PerformLayout();
-            this.pnlProductManagement.ResumeLayout(false);
             this.pnlAddProduct.ResumeLayout(false);
             this.pnlAddProduct.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAddProduct)).EndInit();
@@ -2450,7 +2427,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridOutOfStock)).EndInit();
             this.pnlManagerDashBoard.ResumeLayout(false);
             this.pnlManagerDashBoard.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtGridDashBoardShow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLowStockManager)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewLowStock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewLowDailySales)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewLowMontlySales)).EndInit();
@@ -2474,7 +2451,6 @@
         private System.Windows.Forms.Panel pnlLeftDashboard;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button btnProfile;
-        private System.Windows.Forms.Button btnProductManagement;
         private System.Windows.Forms.Button btnOrderMangement;
         private System.Windows.Forms.Panel pnlUpdateStock;
         private System.Windows.Forms.Label lblAddProduct;
@@ -2513,10 +2489,8 @@
         private System.Windows.Forms.Label lblUpdateRole;
         private System.Windows.Forms.Label lblUpdateGender;
         private System.Windows.Forms.Label lblUpdateDOB;
-        private System.Windows.Forms.Panel pnlProductManagement;
         private System.Windows.Forms.Button btnStockAlart;
         private System.Windows.Forms.Button btnDeleteProduct;
-        private System.Windows.Forms.Button btnAddProducts;
         private System.Windows.Forms.Button btnUpdateProduct;
         private System.Windows.Forms.Panel pnlAddProduct;
         private System.Windows.Forms.Label lblUpdateName;
@@ -2627,7 +2601,7 @@
         private System.Windows.Forms.Label lblMontlyValue;
         private System.Windows.Forms.DataGridView gridViewLowStock;
         private System.Windows.Forms.Label lblLowStock;
-        private System.Windows.Forms.DataGridView dtGridDashBoardShow;
+        private System.Windows.Forms.DataGridView dgvLowStockManager;
         private System.Windows.Forms.DataGridView gridViewAlertTable;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label lblSummaryCard;
@@ -2653,5 +2627,6 @@
         private System.Windows.Forms.TextBox txtOrderWarrenty;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label lblLowStockManager;
     }
 }

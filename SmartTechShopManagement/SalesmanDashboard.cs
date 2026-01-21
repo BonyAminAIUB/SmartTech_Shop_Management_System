@@ -21,10 +21,12 @@ namespace SmartTechShopManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
-            pnlPos.Visible = true;
-            //pnlBrowseHardware.Visible = false;
-            pnlCustomerHistory.Visible = false;
+            pnlPos.Visible = false;
+            pnlCustomerHistory.Visible = true;
             pnlLowStockAlart.Visible = false;
+            pnlProduct.Visible = false;
+            pnlProfile.Visible = false;
+            pnlRefund.Visible = false;
         }
 
         private void Dashboard_Load(object sender, EventArgs e)
@@ -199,6 +201,7 @@ namespace SmartTechShopManagement
             pnlLowStockAlart.Visible = false; 
             pnlProduct.Visible = false;
             pnlProfile.Visible = false;
+            pnlRefund.Visible = false;
         }
 
         private void txtCustomerMobileNo_TextChanged(object sender, EventArgs e)
@@ -319,6 +322,13 @@ namespace SmartTechShopManagement
 
         private void button11_Click(object sender, EventArgs e)
         {
+            pnlPos.Visible = false;
+            pnlCustomerHistory.Visible = false;
+            pnlLowStockAlart.Visible = false;
+            pnlProduct.Visible = true;
+            pnlProfile.Visible = false;
+            pnlRefund.Visible = false;
+
             Connection connection = new Connection();
             string query = "select * from productInfoTb";
             connection.pullForDataTable(query);
@@ -358,6 +368,13 @@ namespace SmartTechShopManagement
 
         private void button13_Click(object sender, EventArgs e)
         {
+            pnlPos.Visible = false;
+            pnlCustomerHistory.Visible = false;
+            pnlLowStockAlart.Visible = false;
+            pnlProduct.Visible = false;
+            pnlProfile.Visible = true;
+            pnlRefund.Visible = false;
+
             Connection connection = new Connection();
             string query = $"select * from empInfoTb where empUsername = '{LoginForm.sharedUsername}'";
             DataTable dt = connection.pullForDataTable(query);
@@ -408,6 +425,16 @@ namespace SmartTechShopManagement
         private void chart1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            pnlPos.Visible = false;
+            pnlCustomerHistory.Visible = false;
+            pnlLowStockAlart.Visible = false;
+            pnlProduct.Visible = false;
+            pnlProfile.Visible = false;
+            pnlRefund.Visible = true;
         }
 
         private void dgvPosSearchedProduct_CellClick(object sender, DataGridViewCellEventArgs e)

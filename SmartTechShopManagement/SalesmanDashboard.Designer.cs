@@ -217,6 +217,7 @@
             this.button8.TabIndex = 21;
             this.button8.Text = "Refund / Return";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click_1);
             // 
             // cbxNotification
             // 
@@ -292,7 +293,7 @@
             // 
             this.button13.BackColor = System.Drawing.SystemColors.Control;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(0, 185);
+            this.button13.Location = new System.Drawing.Point(0, 183);
             this.button13.Margin = new System.Windows.Forms.Padding(2);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(200, 46);
@@ -1767,10 +1768,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1149, 789);
+            this.Controls.Add(this.pnlProfile);
             this.Controls.Add(this.pnlRefund);
             this.Controls.Add(this.pnlPos);
             this.Controls.Add(this.pnlProduct);
-            this.Controls.Add(this.pnlProfile);
             this.Controls.Add(this.pnlLowStockAlart);
             this.Controls.Add(this.pnlCustomerHistory);
             this.Controls.Add(this.pnlLeftDashboard);

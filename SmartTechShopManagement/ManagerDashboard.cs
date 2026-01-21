@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace SmartTechShopManagement
@@ -28,7 +29,6 @@ namespace SmartTechShopManagement
             pnlDeleteProduct.Visible = false;
             pnlStockAlart.Visible = false;
             pnlManagerDashBoard.Visible = false;
-            pnlProductManagement.Visible = false;
             pnlUpperOrderList.Visible = true;
             pnlUpperlbl.Visible = true;
             pnlOrderDetails.Visible = true;
@@ -38,22 +38,22 @@ namespace SmartTechShopManagement
             string query2 = "select * from productInfoTb where productStockStatus = 'Peinding Approval'";
             dgvOrderManagement.DataSource = connection.pullForDataTable(query2);
         }
-        private void btnProducts_Click(object sender, EventArgs e)
-        { 
-            // Product-Management Button
-            pnlProfile.Visible = false;
-            pnlUpdateInfo.Visible = false;
-            pnlUpdateStock.Visible = false;
-            pnlAddProduct.Visible = false;
-            pnlDeleteProduct.Visible = false;
-            pnlStockAlart.Visible = false;
-            pnlManagerDashBoard.Visible = false;
-            pnlOrderManagement.Visible = false;
-            pnlUpperOrderList.Visible = false;
-            pnlUpperlbl.Visible = false;
-            pnlOrderDetails.Visible = false;
-            pnlProductManagement.Visible = true;
-        }
+        //private void btnProducts_Click(object sender, EventArgs e)
+        //{ 
+        //    // Product-Management Button
+        //    pnlProfile.Visible = false;
+        //    pnlUpdateInfo.Visible = false;
+        //    pnlUpdateStock.Visible = false;
+        //    pnlAddProduct.Visible = false;
+        //    pnlDeleteProduct.Visible = false;
+        //    pnlStockAlart.Visible = false;
+        //    pnlManagerDashBoard.Visible = false;
+        //    pnlOrderManagement.Visible = false;
+        //    pnlUpperOrderList.Visible = false;
+        //    pnlUpperlbl.Visible = false;
+        //    pnlOrderDetails.Visible = false;
+        //    pnlProductManagement.Visible = true;
+        //}
         private void button4_Click(object sender, EventArgs e)
         {
             // Profile Button
@@ -68,7 +68,7 @@ namespace SmartTechShopManagement
             pnlUpperOrderList.Visible = false;
             pnlUpperlbl.Visible = false;
             pnlOrderDetails.Visible = false;
-            pnlProductManagement.Visible = false;  
+
             
             DataTable dt = new DataTable();
             Connection connection = new Connection();
@@ -118,7 +118,6 @@ namespace SmartTechShopManagement
         }
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            pnlProductManagement.Visible = false;
             pnlUpdateStock.Visible = false;
             pnlAddProduct.Visible = false;
             pnlDeleteProduct.Visible = false;
@@ -152,7 +151,6 @@ namespace SmartTechShopManagement
         }
         private void btnBack_Click(object sender, EventArgs e)
         {                     
-            pnlProductManagement.Visible = false;
             pnlUpdateStock.Visible = false;
             pnlAddProduct.Visible = false;
             pnlUpdateInfo.Visible = false;
@@ -202,7 +200,6 @@ namespace SmartTechShopManagement
             //button add product
             pnlProfile.Visible = false;
             pnlUpdateInfo.Visible = false;
-            pnlProductManagement.Visible = false;
             pnlUpdateStock.Visible = false;
             pnlDeleteProduct.Visible = false;
             pnlStockAlart.Visible = false;
@@ -221,7 +218,6 @@ namespace SmartTechShopManagement
         {
             pnlProfile.Visible = false;
             pnlUpdateInfo.Visible = false;
-            pnlProductManagement.Visible = false;
             pnlAddProduct.Visible = false;
             pnlDeleteProduct.Visible = false;
             pnlStockAlart.Visible = false;
@@ -240,7 +236,6 @@ namespace SmartTechShopManagement
         {
             pnlProfile.Visible = false;
             pnlUpdateInfo.Visible = false;
-            pnlProductManagement.Visible = false;
             pnlAddProduct.Visible = false;
             pnlUpdateStock.Visible = false;
             pnlStockAlart.Visible = false;
@@ -259,7 +254,6 @@ namespace SmartTechShopManagement
         {
             pnlProfile.Visible = false;
             pnlUpdateInfo.Visible = false;
-            pnlProductManagement.Visible = false;
             pnlAddProduct.Visible = false;
             pnlUpdateStock.Visible = false;
             pnlDeleteProduct.Visible = false;
@@ -269,6 +263,20 @@ namespace SmartTechShopManagement
             pnlUpperlbl.Visible = false;
             pnlOrderDetails.Visible = false;
             pnlStockAlart.Visible = true;
+
+            Connection conn = new Connection();
+            string query = "select * from productInfoTb where productStockStatus = 'Low Stock'";
+            gridViewAlertTable.DataSource = conn.pullForDataTable(query);
+
+            string query2 = "select * from productInfoTb where productStockStatus = 'Out of Stock'";
+            DataTable dt = conn.pullForDataTable(query2);
+            lblOutStockValue.Text = dt.Rows.Count.ToString();
+
+            lblLowAlartValue.Text = gridViewAlertTable.Rows.Count.ToString();
+
+            string query4 = "select * from productInfoTb";
+            DataTable dt2 = conn.pullForDataTable(query4);
+            lblTotalValue.Text = dt2.Rows.Count.ToString();
         }
         private void btnAddBack_Click(object sender, EventArgs e)
         {
@@ -283,7 +291,6 @@ namespace SmartTechShopManagement
             pnlUpperOrderList.Visible = false;
             pnlUpperlbl.Visible = false;
             pnlOrderDetails.Visible = false;
-            pnlProductManagement.Visible = true;
         }
         private void btnUpdateBack_Click(object sender, EventArgs e)
         {
@@ -298,7 +305,6 @@ namespace SmartTechShopManagement
             pnlUpperOrderList.Visible = false;
             pnlUpperlbl.Visible = false;
             pnlOrderDetails.Visible = false;
-            pnlProductManagement.Visible = true;
         }
         private void btnDeleteBack_Click(object sender, EventArgs e)
         {
@@ -313,7 +319,6 @@ namespace SmartTechShopManagement
             pnlUpperOrderList.Visible = false;
             pnlUpperlbl.Visible = false;
             pnlOrderDetails.Visible = false;
-            pnlProductManagement.Visible = true;
         }
         private void btnStockBack_Click(object sender, EventArgs e)
         {
@@ -328,7 +333,6 @@ namespace SmartTechShopManagement
             pnlUpperOrderList.Visible = false;
             pnlUpperlbl.Visible = false;
             pnlOrderDetails.Visible = false;
-            pnlProductManagement.Visible = true;
         }
 
         private void btnDashBoard_Click(object sender, EventArgs e)
@@ -339,12 +343,103 @@ namespace SmartTechShopManagement
             pnlUpdateStock.Visible = false;
             pnlDeleteProduct.Visible = false;
             pnlStockAlart.Visible = false;
-            pnlProductManagement.Visible = false;
             pnlOrderManagement.Visible = false;
             pnlUpperOrderList.Visible = false;
             pnlUpperlbl.Visible = false;
             pnlOrderDetails.Visible = false;
-            pnlManagerDashBoard.Visible = true;            
+            pnlManagerDashBoard.Visible = true;
+
+            Connection connection = new Connection();
+            string query = "select * from customerInfoTb";
+            DataTable dt = connection.pullForDataTable(query);
+
+            DateTime todaysDate = DateTime.Now;
+            long totalSales = 0;
+
+            foreach (DataRow row in dt.Rows)
+            {
+                // TryParse is safe: it won't crash if a price is empty or text
+                if (long.TryParse(row["customerProductPrice"].ToString(), out long price))
+                {
+                    totalSales += price;
+                }
+            }
+            lblDailyValue.Text = totalSales.ToString();
+
+            long MontlyValue = 0;
+
+            foreach (DataRow row in dt.Rows)
+            {
+                // 2. Check if the row has a date (Not NULL) and is a valid date
+                string dateString = row["customerProductSoldDate"].ToString();
+
+                if (!string.IsNullOrEmpty(dateString) && DateTime.TryParse(dateString, out DateTime soldDate))
+                {
+                    // 3. Check if the sale happened in THIS Month and THIS Year
+                    if (soldDate.Month == todaysDate.Month && soldDate.Year == todaysDate.Year)
+                    {
+                        // 4. Add the price to the total
+                        // We use TryParse because your price column is text
+                        if (long.TryParse(row["customerProductPrice"].ToString(), out long price))
+                        {
+                            MontlyValue += price;
+                        }
+                    }
+                }
+            }
+
+            // 5. Show the result
+            // Based on your screenshot, this should show "18500 TK" (only the last row counts)
+            lblMontlyValue.Text = MontlyValue.ToString();
+
+            long YearlyValue = 0;
+
+            foreach (DataRow row in dt.Rows)
+            {
+                // 1. Get the date string safely
+                string dateString = row["customerProductSoldDate"].ToString();
+
+                // 2. Check if date exists and is valid
+                if (!string.IsNullOrEmpty(dateString) && DateTime.TryParse(dateString, out DateTime soldDate))
+                {
+                    // 3. Check if the sale happened in THIS Year (e.g., 2026)
+                    if (soldDate.Year == todaysDate.Year)
+                    {
+                        // 4. Add the price to the total
+                        if (long.TryParse(row["customerProductPrice"].ToString(), out long price))
+                        {
+                            YearlyValue += price;
+                        }
+                    }
+                }
+            }
+
+            lblYearlyValue.Text = YearlyValue.ToString();
+
+            string query2 = "select * from productInfoTb where productStockStatus = 'Low Stock'";
+            dgvLowStockManager.DataSource= connection.pullForDataTable(query2);
+
+            int rowCount = dgvLowStockManager.Rows.Count;
+            rowCount -=1; 
+            lblLowStockManager.Text = rowCount.ToString();
+
+
+            chartDashBoard.Series.Clear();
+
+            Series series = new Series("SalesReport");
+
+            series.ChartType = SeriesChartType.Pie;
+
+            int daily = int.Parse(lblDailyValue.Text);
+            int monthly = int.Parse(lblMontlyValue.Text);
+            int yearly = int.Parse(lblYearlyValue.Text);
+
+            series.Points.AddXY("Daily", daily);
+            series.Points.AddXY("Monthly", monthly);
+            series.Points.AddXY("Yearly", yearly);
+
+
+
         }
 
         private void pnlManagerDashBoard_Paint(object sender, PaintEventArgs e)
@@ -355,7 +450,6 @@ namespace SmartTechShopManagement
             pnlUpdateStock.Visible = false;
             pnlDeleteProduct.Visible = false;
             pnlStockAlart.Visible = false;
-            pnlProductManagement.Visible = false;
             pnlOrderManagement.Visible = false;
             pnlUpperOrderList.Visible = false;
             pnlUpperlbl.Visible = false;
@@ -500,6 +594,26 @@ namespace SmartTechShopManagement
                 string query2 = $"update productInfoTb set productStockStatus = 'Ordered' where ProductName = '{txtName.Text}'";
                 connection.push(query);
             }
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            Connection connection = new Connection();
+            string query = "delete from productInfoTb where ProductName = '" + txtName.Text + "'";
+            connection.push(query);
+            
+            string query2 = "select * from productInfoTb where productStockStatus = 'Peinding Approval'";
+            dgvOrderManagement.DataSource = connection.pullForDataTable(query2);
+        }
+
+        private void lblLowStock_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLowStockManager_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -67,7 +67,6 @@
     <Compile Include="SalesmanDashboard.Designer.cs">
       <DependentUpon>SalesmanDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataAccess.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
