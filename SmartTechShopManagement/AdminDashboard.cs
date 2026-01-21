@@ -353,5 +353,10 @@ namespace SmartTechShopManagement
             }
             
         }
+
+        private void dgvNotification_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
