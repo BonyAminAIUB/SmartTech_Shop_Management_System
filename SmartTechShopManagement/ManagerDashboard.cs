@@ -615,5 +615,20 @@ namespace SmartTechShopManagement
         {
 
         }
+
+        private void pnlAddProduct_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlUpperlbl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlUpdateStock_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
