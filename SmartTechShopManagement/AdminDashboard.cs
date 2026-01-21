@@ -46,13 +46,13 @@ namespace SmartTechShopManagement
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //pnlOverview.Visible = false;
+            
             pnlProductManagement.Visible = false;
             pnlSalesReport.Visible = false;
-            //pnlStaffAccount.Visible = false;
-            //pnlEmpManagement.Visible = true;
-            //pnlNotification.Visible = false;
-            //pnlMessages.Visible = false;    
+            pnlLoginAudit.Visible = false;
+            pnlUpdateEmployee.Visible = true;
+            
+
 
             Connection connection = new Connection();
             string query = "select * from empInfoTb";
@@ -388,6 +388,17 @@ namespace SmartTechShopManagement
             MessageBox.Show("Product Approved and Ordered!");
 
             dgvProductManagement.DataSource = connection.pullForDataTable("select * from productInfoTb where productStockStatus = 'Ordered'");
+        }
+
+        private void button10_Click_1(object sender, EventArgs e)
+        {
+            Connection connection = new Connection();
+            string query = "update empInfoTb set empname = '" + txtRegName.Text + "',empUsername = '" + txtRegUsername.Text + "',empEmail = '" + txtRegEmail.Text + "',empPhoneNo = '" + txtRegPhoneNo.Text + "',empRole = '" + cbxRegRole.Text + "',empQualification ='" + cbxRegQualificatioin.Text + "',empGender = '" + cbxRegGender.Text + "',empJoiningDate = '" + dtpRegJoiningDate.Value + "',empDOB = '" + dtpRegDOB.Value + "',empAddress = '" + rtbxRegAddress.Text + "' where empUsername = '"+txtRegUsername.Text+"'";
+            connection.push(query);
+
+            MessageBox.Show("Employee Profile Updated Successfully!");
+            string query2 = "delete from empProfileUpdate where empUsername = '" + txtRegUsername.Text + "'";
+            connection.push(query2);
         }
     }
 }
