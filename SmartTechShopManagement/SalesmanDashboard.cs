@@ -122,19 +122,19 @@ namespace SmartTechShopManagement
             if (txtCustomerName.Text == "" && txtCustomerMobileNo.Text == "")
             {
                 Connection connection = new Connection();
-                string query = "select customerName,customerMobileNo,customerSubscription from customerInfoTb";
+                string query = "select customerName,customerMobileNo from customerInfoTb";
                 dgvPOSCustomerInfo.DataSource = connection.pullForDataTable(query);
             }
             else if (txtCustomerName.Text != "")
             {
                 Connection connection = new Connection();
-                string query = $"select customerName,customerMobileNo,customerSubscription from customerInfoTb where customerName = '{txtCustomerName.Text}'";
+                string query = $"select customerName,customerMobileNo from customerInfoTb where customerName = '{txtCustomerName.Text}'";
                 dgvPOSCustomerInfo.DataSource = connection.pullForDataTable(query);
             }
             else if(txtCustomerMobileNo.Text != "")
             {
                 Connection connection = new Connection();
-                string query = $"select customerName,customerMobileNo,customerSubscription from customerInfoTb where customerMobileNo = '{txtCustomerMobileNo.Text}'";
+                string query = $"select customerName,customerMobileNo, from customerInfoTb where customerMobileNo = '{txtCustomerMobileNo.Text}'";
                 dgvPOSCustomerInfo.DataSource = connection.pullForDataTable(query);
             }
         }
@@ -148,7 +148,7 @@ namespace SmartTechShopManagement
         {
             txtName.Text = dgvPOSCustomerInfo.Rows[e.RowIndex].Cells[0].Value.ToString();
             txtMobileNo.Text = dgvPOSCustomerInfo.Rows[e.RowIndex].Cells[1].Value.ToString();
-            txtSubscriptionStatus.Text = dgvPOSCustomerInfo.Rows[e.RowIndex].Cells[2].Value.ToString();
+
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -289,7 +289,7 @@ namespace SmartTechShopManagement
                 productWarrenty = dgvPosCart.Rows[i].Cells[2].Value.ToString();
                 int productQuantity = int.Parse(dgvPosCart.Rows[i].Cells[3].Value.ToString());
                 Connection connection = new Connection();
-                string query = "insert into customerInfoTb (customerName,customerMobileNo,customerProduct,customerSubscription,customerSoldBy,customerProductPrice,customerProductWarrenty,customerProductQuantity,customerProductSoldDate) values ('" + txtName.Text + "','" + txtMobileNo.Text + "','" + productName + "','" + txtSubscriptionStatus.Text + "','" + LoginForm.sharedUsername + "','" + productPrice + "','" + productWarrenty + "','" + productQuantity + "','"+today+"')";
+                string query = "insert into customerInfoTb (customerName,customerMobileNo,customerProduct,customerSoldBy,customerProductPrice,customerProductWarrenty,customerProductQuantity,customerProductSoldDate) values ('" + txtName.Text + "','" + txtMobileNo.Text + "','" + productName + "','" + LoginForm.sharedUsername + "','" + productPrice + "','" + productWarrenty + "','" + productQuantity + "','"+today+"')";
                 connection.push(query);
 
                 string queryForQuantityUpdate = $"update productInfoTb set productQuantity = productQuantity - {productQuantity} where productName = '{productName}'";
@@ -316,8 +316,21 @@ namespace SmartTechShopManagement
         private void button1_Click_2(object sender, EventArgs e)
         {
             Connection connection = new Connection();
-            string query = "select * from customerInfoTb where customerMobileNo = '" + int.Parse(txtSearchCustomer.Text) + "'";
-            dgvCustomerHistory.DataSource = connection.pullForDataTable(query);
+            if(txtSearchCustomer.Text == "")
+            {
+                string query = "select * from customerInfoTb";
+                dgvCustomerHistory.DataSource = connection.pullForDataTable(query);
+            }
+            else if(txtSearchCustomer.Text == "Search Customer Number")
+            {
+                string query = "select * from customerInfoTb";
+                dgvCustomerHistory.DataSource = connection.pullForDataTable(query);
+            }
+            else
+            {
+                string query = $"select * from customerInfoTb where customerMobileNo = '{txtSearchCustomer.Text}'";
+                dgvCustomerHistory.DataSource = connection.pullForDataTable(query);
+            }
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -396,6 +409,18 @@ namespace SmartTechShopManagement
             chart1.Series["Series1"].XValueMember = "customerProduct"; 
             chart1.Series["Series1"].YValueMembers = "customerProductQuantity";
             chart1.DataBind();
+
+            DateTime todaysDate = DateTime.Now;
+
+            string query3 = "select customerProductPrice from customerInfoTb";
+            DataTable dt3 = connection.pullForDataTable(query3);
+            int totalSales = 0;
+
+            for(int i =0; i< dt3.Rows.Count; i++)
+            {
+                totalSales += int.Parse(dt3.Rows[i]["customerProductPrice"].ToString());
+            }
+            lblTodaysSales.Text = totalSales.ToString() + " TK";
         }
 
         private void cbxNotification_CheckedChanged(object sender, EventArgs e)

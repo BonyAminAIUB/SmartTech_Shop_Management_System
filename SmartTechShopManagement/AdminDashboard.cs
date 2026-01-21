@@ -331,6 +331,7 @@ namespace SmartTechShopManagement
             pnlProductManagement.Visible = false;
             pnlSalesReport.Visible = false;
             pnlUpdateEmployee.Visible = false;
+            pnlLoginAudit.Visible = true;
 
             Connection connection = new Connection();
             string query = "select * from loginTrackingTb";

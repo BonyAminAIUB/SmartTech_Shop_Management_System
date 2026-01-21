@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pnlLeftDashboard = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.cbxNotification = new System.Windows.Forms.CheckBox();
@@ -57,11 +57,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnAddNewCustomer = new System.Windows.Forms.Button();
-            this.txtSubscriptionStatus = new System.Windows.Forms.TextBox();
             this.txtMobileNo = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
@@ -112,11 +109,8 @@
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label9 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label30 = new System.Windows.Forms.Label();
+            this.lblTodaysSales = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -143,8 +137,6 @@
             this.txtRegPhoneNo = new System.Windows.Forms.TextBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pnlRefund = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.button14 = new System.Windows.Forms.Button();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -175,7 +167,6 @@
             this.pnlProfile.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pnlRefund.SuspendLayout();
@@ -201,7 +192,7 @@
             this.pnlLeftDashboard.Controls.Add(this.lblDashboard);
             this.pnlLeftDashboard.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeftDashboard.Location = new System.Drawing.Point(0, 0);
-            this.pnlLeftDashboard.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlLeftDashboard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlLeftDashboard.Name = "pnlLeftDashboard";
             this.pnlLeftDashboard.Size = new System.Drawing.Size(200, 789);
             this.pnlLeftDashboard.TabIndex = 0;
@@ -211,7 +202,7 @@
             this.button8.BackColor = System.Drawing.SystemColors.Control;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Location = new System.Drawing.Point(0, 230);
-            this.button8.Margin = new System.Windows.Forms.Padding(2);
+            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(200, 46);
             this.button8.TabIndex = 21;
@@ -239,6 +230,7 @@
             this.dgvNotification.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNotification.Location = new System.Drawing.Point(5, 329);
             this.dgvNotification.Name = "dgvNotification";
+            this.dgvNotification.RowHeadersWidth = 82;
             this.dgvNotification.Size = new System.Drawing.Size(191, 201);
             this.dgvNotification.TabIndex = 19;
             this.dgvNotification.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNotification_CellContentClick);
@@ -294,7 +286,7 @@
             this.button13.BackColor = System.Drawing.SystemColors.Control;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.Location = new System.Drawing.Point(0, 183);
-            this.button13.Margin = new System.Windows.Forms.Padding(2);
+            this.button13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(200, 46);
             this.button13.TabIndex = 9;
@@ -307,7 +299,7 @@
             this.btnPos.BackColor = System.Drawing.SystemColors.Control;
             this.btnPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPos.Location = new System.Drawing.Point(0, 53);
-            this.btnPos.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPos.Name = "btnPos";
             this.btnPos.Size = new System.Drawing.Size(200, 46);
             this.btnPos.TabIndex = 8;
@@ -320,7 +312,7 @@
             this.button11.BackColor = System.Drawing.SystemColors.Control;
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.Location = new System.Drawing.Point(0, 94);
-            this.button11.Margin = new System.Windows.Forms.Padding(2);
+            this.button11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(200, 46);
             this.button11.TabIndex = 7;
@@ -333,7 +325,7 @@
             this.button6.BackColor = System.Drawing.Color.Red;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(0, 734);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(200, 46);
             this.button6.TabIndex = 3;
@@ -346,7 +338,7 @@
             this.btnProducts.BackColor = System.Drawing.SystemColors.Control;
             this.btnProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProducts.Location = new System.Drawing.Point(0, 138);
-            this.btnProducts.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProducts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnProducts.Name = "btnProducts";
             this.btnProducts.Size = new System.Drawing.Size(200, 46);
             this.btnProducts.TabIndex = 1;
@@ -377,11 +369,8 @@
             this.pnlPos.Controls.Add(this.label2);
             this.pnlPos.Controls.Add(this.textBox7);
             this.pnlPos.Controls.Add(this.label1);
-            this.pnlPos.Controls.Add(this.comboBox4);
-            this.pnlPos.Controls.Add(this.comboBox3);
             this.pnlPos.Controls.Add(this.btnSearch);
             this.pnlPos.Controls.Add(this.btnAddNewCustomer);
-            this.pnlPos.Controls.Add(this.txtSubscriptionStatus);
             this.pnlPos.Controls.Add(this.txtMobileNo);
             this.pnlPos.Controls.Add(this.txtName);
             this.pnlPos.Controls.Add(this.button9);
@@ -535,67 +524,13 @@
             this.label1.TabIndex = 45;
             this.label1.Text = "Recieved Ammount";
             // 
-            // comboBox4
-            // 
-            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "CPU",
-            "GPU",
-            "RAM",
-            "Motherboard",
-            "PSU",
-            "SSD",
-            "HDD",
-            "USB",
-            "Case",
-            "Cooler",
-            "Monitor",
-            "Microphone",
-            "Headphone",
-            "Keyboard",
-            "Mouse",
-            "Cabels"});
-            this.comboBox4.Location = new System.Drawing.Point(375, 228);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(145, 28);
-            this.comboBox4.TabIndex = 44;
-            this.comboBox4.Text = "Brand";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "CPU",
-            "GPU",
-            "RAM",
-            "Motherboard",
-            "PSU",
-            "SSD",
-            "HDD",
-            "USB",
-            "Case",
-            "Cooler",
-            "Monitor",
-            "Microphone",
-            "Headphone",
-            "Keyboard",
-            "Mouse",
-            "Cabels"});
-            this.comboBox3.Location = new System.Drawing.Point(213, 229);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(156, 28);
-            this.comboBox3.TabIndex = 40;
-            this.comboBox3.Text = "Catagory";
-            // 
             // btnSearch
             // 
             this.btnSearch.BackgroundImage = global::SmartTechShopManagement.Properties.Resources.Search;
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(526, 225);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearch.Location = new System.Drawing.Point(221, 225);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(39, 33);
             this.btnSearch.TabIndex = 37;
@@ -608,25 +543,12 @@
             this.btnAddNewCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAddNewCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddNewCustomer.Location = new System.Drawing.Point(526, 158);
-            this.btnAddNewCustomer.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddNewCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddNewCustomer.Name = "btnAddNewCustomer";
             this.btnAddNewCustomer.Size = new System.Drawing.Size(39, 35);
             this.btnAddNewCustomer.TabIndex = 36;
             this.btnAddNewCustomer.UseVisualStyleBackColor = true;
             this.btnAddNewCustomer.Click += new System.EventHandler(this.btnAddNewCustomer_Click);
-            // 
-            // txtSubscriptionStatus
-            // 
-            this.txtSubscriptionStatus.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtSubscriptionStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtSubscriptionStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubscriptionStatus.Location = new System.Drawing.Point(369, 40);
-            this.txtSubscriptionStatus.Name = "txtSubscriptionStatus";
-            this.txtSubscriptionStatus.ReadOnly = true;
-            this.txtSubscriptionStatus.Size = new System.Drawing.Size(176, 26);
-            this.txtSubscriptionStatus.TabIndex = 35;
-            this.txtSubscriptionStatus.Text = "Subscription Status";
-            this.txtSubscriptionStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtMobileNo
             // 
@@ -661,7 +583,7 @@
             this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.Location = new System.Drawing.Point(456, 158);
-            this.button9.Margin = new System.Windows.Forms.Padding(2);
+            this.button9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(39, 36);
             this.button9.TabIndex = 29;
@@ -875,7 +797,7 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(221, 31);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(39, 36);
             this.button1.TabIndex = 30;
@@ -1161,16 +1083,16 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(435, 362);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(357, 220);
             this.chart1.TabIndex = 61;
             this.chart1.Text = "chart1";
@@ -1189,7 +1111,6 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(275, 0);
@@ -1197,55 +1118,25 @@
             this.panel3.Size = new System.Drawing.Size(674, 284);
             this.panel3.TabIndex = 59;
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel5.Controls.Add(this.label31);
-            this.panel5.Controls.Add(this.label22);
-            this.panel5.Location = new System.Drawing.Point(397, 95);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 100);
-            this.panel5.TabIndex = 3;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(63, 47);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(78, 31);
-            this.label31.TabIndex = 4;
-            this.label31.Text = "0000";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(35, 13);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(140, 24);
-            this.label22.TabIndex = 2;
-            this.label22.Text = "Monthly Sales";
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel4.Controls.Add(this.label30);
+            this.panel4.Controls.Add(this.lblTodaysSales);
             this.panel4.Controls.Add(this.label29);
-            this.panel4.Location = new System.Drawing.Point(100, 93);
+            this.panel4.Location = new System.Drawing.Point(225, 92);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 100);
             this.panel4.TabIndex = 2;
             // 
-            // label30
+            // lblTodaysSales
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(60, 47);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(78, 31);
-            this.label30.TabIndex = 3;
-            this.label30.Text = "0000";
+            this.lblTodaysSales.AutoSize = true;
+            this.lblTodaysSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTodaysSales.Location = new System.Drawing.Point(60, 47);
+            this.lblTodaysSales.Name = "lblTodaysSales";
+            this.lblTodaysSales.Size = new System.Drawing.Size(78, 31);
+            this.lblTodaysSales.TabIndex = 3;
+            this.lblTodaysSales.Text = "0000";
             // 
             // label29
             // 
@@ -1306,7 +1197,7 @@
             this.txtRegRole.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRegRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRegRole.Location = new System.Drawing.Point(124, 276);
-            this.txtRegRole.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRegRole.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRegRole.Name = "txtRegRole";
             this.txtRegRole.ReadOnly = true;
             this.txtRegRole.Size = new System.Drawing.Size(132, 19);
@@ -1317,7 +1208,7 @@
             this.txtRegJoiningDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRegJoiningDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRegJoiningDate.Location = new System.Drawing.Point(124, 432);
-            this.txtRegJoiningDate.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRegJoiningDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRegJoiningDate.Name = "txtRegJoiningDate";
             this.txtRegJoiningDate.ReadOnly = true;
             this.txtRegJoiningDate.Size = new System.Drawing.Size(132, 19);
@@ -1341,7 +1232,7 @@
             this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.Location = new System.Drawing.Point(48, 665);
-            this.button16.Margin = new System.Windows.Forms.Padding(2);
+            this.button16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(173, 59);
             this.button16.TabIndex = 36;
@@ -1378,7 +1269,7 @@
             this.txtRegDOB.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRegDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRegDOB.Location = new System.Drawing.Point(124, 485);
-            this.txtRegDOB.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRegDOB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRegDOB.Name = "txtRegDOB";
             this.txtRegDOB.ReadOnly = true;
             this.txtRegDOB.Size = new System.Drawing.Size(132, 19);
@@ -1402,7 +1293,7 @@
             this.txtRegQua.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRegQua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRegQua.Location = new System.Drawing.Point(124, 325);
-            this.txtRegQua.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRegQua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRegQua.Name = "txtRegQua";
             this.txtRegQua.ReadOnly = true;
             this.txtRegQua.Size = new System.Drawing.Size(132, 19);
@@ -1426,7 +1317,7 @@
             this.txtRegGender.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRegGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRegGender.Location = new System.Drawing.Point(124, 377);
-            this.txtRegGender.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRegGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRegGender.Name = "txtRegGender";
             this.txtRegGender.ReadOnly = true;
             this.txtRegGender.Size = new System.Drawing.Size(132, 19);
@@ -1463,7 +1354,7 @@
             this.txtRegName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRegName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRegName.Location = new System.Drawing.Point(124, 85);
-            this.txtRegName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRegName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRegName.Name = "txtRegName";
             this.txtRegName.ReadOnly = true;
             this.txtRegName.Size = new System.Drawing.Size(132, 19);
@@ -1474,7 +1365,7 @@
             this.txtRegUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRegUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRegUsername.Location = new System.Drawing.Point(124, 131);
-            this.txtRegUsername.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRegUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRegUsername.Name = "txtRegUsername";
             this.txtRegUsername.ReadOnly = true;
             this.txtRegUsername.Size = new System.Drawing.Size(132, 19);
@@ -1484,7 +1375,7 @@
             // 
             this.rtbxRegAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbxRegAddress.Location = new System.Drawing.Point(124, 540);
-            this.rtbxRegAddress.Margin = new System.Windows.Forms.Padding(2);
+            this.rtbxRegAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rtbxRegAddress.Name = "rtbxRegAddress";
             this.rtbxRegAddress.ReadOnly = true;
             this.rtbxRegAddress.Size = new System.Drawing.Size(132, 77);
@@ -1524,7 +1415,7 @@
             this.txtRegEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRegEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRegEmail.Location = new System.Drawing.Point(124, 178);
-            this.txtRegEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRegEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRegEmail.Name = "txtRegEmail";
             this.txtRegEmail.ReadOnly = true;
             this.txtRegEmail.Size = new System.Drawing.Size(132, 19);
@@ -1548,7 +1439,7 @@
             this.txtRegPhoneNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRegPhoneNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRegPhoneNo.Location = new System.Drawing.Point(124, 229);
-            this.txtRegPhoneNo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRegPhoneNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtRegPhoneNo.Name = "txtRegPhoneNo";
             this.txtRegPhoneNo.ReadOnly = true;
             this.txtRegPhoneNo.Size = new System.Drawing.Size(132, 19);
@@ -1562,8 +1453,6 @@
             // 
             // pnlRefund
             // 
-            this.pnlRefund.Controls.Add(this.comboBox2);
-            this.pnlRefund.Controls.Add(this.comboBox7);
             this.pnlRefund.Controls.Add(this.button14);
             this.pnlRefund.Controls.Add(this.textBox13);
             this.pnlRefund.Controls.Add(this.dataGridView2);
@@ -1581,67 +1470,13 @@
             this.pnlRefund.Size = new System.Drawing.Size(949, 789);
             this.pnlRefund.TabIndex = 25;
             // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "CPU",
-            "GPU",
-            "RAM",
-            "Motherboard",
-            "PSU",
-            "SSD",
-            "HDD",
-            "USB",
-            "Case",
-            "Cooler",
-            "Monitor",
-            "Microphone",
-            "Headphone",
-            "Keyboard",
-            "Mouse",
-            "Cabels"});
-            this.comboBox2.Location = new System.Drawing.Point(376, 218);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(145, 28);
-            this.comboBox2.TabIndex = 69;
-            this.comboBox2.Text = "Brand";
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
-            "CPU",
-            "GPU",
-            "RAM",
-            "Motherboard",
-            "PSU",
-            "SSD",
-            "HDD",
-            "USB",
-            "Case",
-            "Cooler",
-            "Monitor",
-            "Microphone",
-            "Headphone",
-            "Keyboard",
-            "Mouse",
-            "Cabels"});
-            this.comboBox7.Location = new System.Drawing.Point(214, 219);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(156, 28);
-            this.comboBox7.TabIndex = 68;
-            this.comboBox7.Text = "Catagory";
-            // 
             // button14
             // 
             this.button14.BackgroundImage = global::SmartTechShopManagement.Properties.Resources.Search;
             this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.Location = new System.Drawing.Point(527, 215);
-            this.button14.Margin = new System.Windows.Forms.Padding(2);
+            this.button14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(39, 33);
             this.button14.TabIndex = 67;
@@ -1726,7 +1561,7 @@
             this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.Location = new System.Drawing.Point(463, 133);
-            this.button10.Margin = new System.Windows.Forms.Padding(2);
+            this.button10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(39, 36);
             this.button10.TabIndex = 58;
@@ -1765,17 +1600,17 @@
             // 
             // SalesmanDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1149, 789);
-            this.Controls.Add(this.pnlProfile);
-            this.Controls.Add(this.pnlRefund);
+            this.Controls.Add(this.pnlCustomerHistory);
             this.Controls.Add(this.pnlPos);
+            this.Controls.Add(this.pnlRefund);
+            this.Controls.Add(this.pnlProfile);
             this.Controls.Add(this.pnlProduct);
             this.Controls.Add(this.pnlLowStockAlart);
-            this.Controls.Add(this.pnlCustomerHistory);
             this.Controls.Add(this.pnlLeftDashboard);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "SalesmanDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "SalesmanDashBord";
@@ -1805,8 +1640,6 @@
             this.pnlProfile.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -1874,17 +1707,14 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox txtSubscriptionStatus;
         private System.Windows.Forms.TextBox txtMobileNo;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Button btnAddNewCustomer;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.DataGridView dgvProductDetails;
         private System.Windows.Forms.ComboBox comboBox14;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.TextBox txtProductDetailsSearch;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.ComboBox comboBox5;
@@ -1904,10 +1734,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label lblTodaysSales;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label1;
@@ -1932,8 +1759,6 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Panel pnlRefund;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.DataGridView dataGridView2;
