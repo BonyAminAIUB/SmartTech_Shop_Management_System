@@ -462,6 +462,96 @@ namespace SmartTechShopManagement
             pnlRefund.Visible = true;
         }
 
+        private void pnlRefund_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (txtCustomerName.Text == "" && txtCustomerMobileNo.Text == "")
+            {
+                Connection connection = new Connection();
+                string query = "select customerName,customerMobileNo from customerInfoTb";
+                dataGridView1.DataSource = connection.pullForDataTable(query);
+            }
+            else if (txtCustomerName.Text != "")
+            {
+                Connection connection = new Connection();
+                string query = $"select customerName,customerMobileNo from customerInfoTb where customerName = '{txtCustomerName.Text}'";
+                dataGridView1.DataSource = connection.pullForDataTable(query);
+            }
+            else if (txtCustomerMobileNo.Text != "")
+            {
+                Connection connection = new Connection();
+                string query = $"select customerName,customerMobileNo, from customerInfoTb where customerMobileNo = '{txtCustomerMobileNo.Text}'";
+                dataGridView1.DataSource = connection.pullForDataTable(query);
+            }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtRefundName.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+            txtRefundMobile.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+        }
+
+        private void button14_Click_1(object sender, EventArgs e)
+        {
+            Connection connection = new Connection();
+            if (txtRefundProduct.Text != "")
+            {
+                string query = "Select * from productInfoTb";
+                dataGridView2.DataSource = connection.pullForDataTable(query);
+            }
+            else if (txtRefundProduct.Text != "Product Name / Model")
+            {
+                string query = "Select * from productInfoTb";
+                dataGridView2.DataSource = connection.pullForDataTable(query);
+            }
+            else
+            {
+                string query = $"Select * from productInfoTb where ProductName = '{txtRefundProduct.Text}' or productModel = '{txtRefundProduct.Text}'";
+                dataGridView2.DataSource = connection.pullForDataTable(query);
+            }
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            tbxItem.Text = dataGridView2.Rows[e.RowIndex].Cells[1].Value.ToString();
+            //textBox3.Text = dataGridView2.Rows[e.RowIndex].Cells[6].Value.ToString();
+            textBox14.Text = dataGridView2.Rows[e.RowIndex].Cells[5].Value.ToString();
+            //int a = int.Parse(dataGridView2.Rows[e.RowIndex].Cells[6].Value.ToString());
+            //int b = int.Parse(dataGridView2.Rows[e.RowIndex].Cells[5].Value.ToString());
+            //textBox15.Text = (a*b).ToString();
+            tbxWarrenty.Text = dataGridView2.Rows[e.RowIndex].Cells[7].Value.ToString();
+
+
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            DateTime datetime = DateTime.Now;
+            
+            string query = $"update productInfoTb set ProductQuantity = ProductQuantity + {textBox3.Text} where ProductName = '{tbxItem.Text}'";
+            Connection connection = new Connection();
+            connection.push(query);
+
+            string query2 = $"insert into customerInfoTb (customerName,customerMobileNo,customerProduct,customerSoldBy,customerProductPrice,customerProductWarrenty,customerProductQuantity,customerProductSoldDate) values ('{txtRefundName.Text}','{txtRefundMobile.Text}','{tbxItem.Text}','{LoginForm.sharedUsername}','{textBox14.Text}','{tbxWarrenty.Text}','{textBox3.Text}','{datetime}')";
+            connection.push(query2);
+            MessageBox.Show("Refund Processed Successfully!");
+        }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+            textBox15.Text = (int.Parse(textBox3.Text) * int.Parse(textBox14.Text)).ToString();
+        }
+
+        private void btnCalc_Click(object sender, EventArgs e)
+        {
+            int change = int.Parse(textBox7.Text) - int.Parse(lblPrice.Text);
+            textBox8.Text = change.ToString();
+        }
+
         private void dgvPosSearchedProduct_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             productStockQuantity = int.Parse(dgvPosSearchedProduct.Rows[e.RowIndex].Cells[6].Value.ToString());

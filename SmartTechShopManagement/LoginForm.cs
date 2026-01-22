@@ -126,7 +126,13 @@ namespace SmartTechShopManagement
 
         private void llblForgetPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form3 regForm = new Form3();
+            regForm.Show();
         }
     }
 }

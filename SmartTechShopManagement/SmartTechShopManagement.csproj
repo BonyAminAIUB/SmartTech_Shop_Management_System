@@ -251,5 +251,8 @@
   <ItemGroup>
     <None Include="Resources\Confirm perchase.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refund.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

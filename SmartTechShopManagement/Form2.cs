@@ -62,10 +62,19 @@ namespace SmartTechShopManagement
             //        );
             //    }
             //}
+            Connection conn = new Connection();
+            string query = $"update empInfoTb set empPassword = '{txtPassword.Text}'  where empUsername='{txtUserBlank.Text}'";
+            conn.push(query);
+            MessageBox.Show("Password Reset Successfully");
 
         }
 
         private void RegistrationForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegistration_Click(object sender, EventArgs e)
         {
 
         }

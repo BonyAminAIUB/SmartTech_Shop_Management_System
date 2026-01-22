@@ -353,6 +353,16 @@ namespace SmartTechShopManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap refund {
+            get {
+                object obj = ResourceManager.GetObject("refund", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap salesManIcon {
             get {
                 object obj = ResourceManager.GetObject("salesManIcon", resourceCulture);
