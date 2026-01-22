@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pnlLeftDashboard = new System.Windows.Forms.Panel();
             this.btnStockAlart = new System.Windows.Forms.Button();
             this.cbxNotification = new System.Windows.Forms.CheckBox();
@@ -177,7 +174,6 @@
             this.gridViewLowDailySales = new System.Windows.Forms.DataGridView();
             this.gridViewLowMontlySales = new System.Windows.Forms.DataGridView();
             this.gridViewYearlySales = new System.Windows.Forms.DataGridView();
-            this.chartDashBoard = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.lblDashBoardMSG = new System.Windows.Forms.Label();
             this.pnlOrderManagement = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
@@ -213,6 +209,7 @@
             this.lblOrderQuantity = new System.Windows.Forms.Label();
             this.lblProductName = new System.Windows.Forms.Label();
             this.lblOrderManagement = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.pnlLeftDashboard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNotification)).BeginInit();
             this.pnlUpdateStock.SuspendLayout();
@@ -234,7 +231,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridViewLowDailySales)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewLowMontlySales)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewYearlySales)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartDashBoard)).BeginInit();
             this.pnlOrderManagement.SuspendLayout();
             this.pnlUpperOrderList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrderManagement)).BeginInit();
@@ -1890,6 +1886,7 @@
             // pnlManagerDashBoard
             // 
             this.pnlManagerDashBoard.BackColor = System.Drawing.SystemColors.Info;
+            this.pnlManagerDashBoard.Controls.Add(this.label30);
             this.pnlManagerDashBoard.Controls.Add(this.lblLowStockManager);
             this.pnlManagerDashBoard.Controls.Add(this.dgvLowStockManager);
             this.pnlManagerDashBoard.Controls.Add(this.lblLowStock);
@@ -1903,7 +1900,6 @@
             this.pnlManagerDashBoard.Controls.Add(this.gridViewLowDailySales);
             this.pnlManagerDashBoard.Controls.Add(this.gridViewLowMontlySales);
             this.pnlManagerDashBoard.Controls.Add(this.gridViewYearlySales);
-            this.pnlManagerDashBoard.Controls.Add(this.chartDashBoard);
             this.pnlManagerDashBoard.Controls.Add(this.lblDashBoardMSG);
             this.pnlManagerDashBoard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlManagerDashBoard.Location = new System.Drawing.Point(200, 0);
@@ -1928,9 +1924,9 @@
             // 
             this.dgvLowStockManager.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.dgvLowStockManager.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLowStockManager.Location = new System.Drawing.Point(717, 244);
+            this.dgvLowStockManager.Location = new System.Drawing.Point(30, 244);
             this.dgvLowStockManager.Name = "dgvLowStockManager";
-            this.dgvLowStockManager.Size = new System.Drawing.Size(516, 589);
+            this.dgvLowStockManager.Size = new System.Drawing.Size(1203, 589);
             this.dgvLowStockManager.TabIndex = 22;
             // 
             // lblLowStock
@@ -2062,25 +2058,6 @@
             this.gridViewYearlySales.RowTemplate.Height = 24;
             this.gridViewYearlySales.Size = new System.Drawing.Size(176, 93);
             this.gridViewYearlySales.TabIndex = 11;
-            // 
-            // chartDashBoard
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chartDashBoard.ChartAreas.Add(chartArea1);
-            this.chartDashBoard.Cursor = System.Windows.Forms.Cursors.IBeam;
-            legend1.Name = "Legend1";
-            this.chartDashBoard.Legends.Add(legend1);
-            this.chartDashBoard.Location = new System.Drawing.Point(16, 244);
-            this.chartDashBoard.Margin = new System.Windows.Forms.Padding(2);
-            this.chartDashBoard.Name = "chartDashBoard";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Legend = "Legend1";
-            series1.Name = "Series";
-            this.chartDashBoard.Series.Add(series1);
-            this.chartDashBoard.Size = new System.Drawing.Size(677, 586);
-            this.chartDashBoard.TabIndex = 10;
-            this.chartDashBoard.Text = "PiSalesReport";
             // 
             // lblDashBoardMSG
             // 
@@ -2460,13 +2437,22 @@
             this.lblOrderManagement.TabIndex = 0;
             this.lblOrderManagement.Text = "Order Management";
             // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(484, 213);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(77, 16);
+            this.label30.TabIndex = 24;
+            this.label30.Text = "Low Stock";
+            // 
             // ManagerDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1444, 845);
-            this.Controls.Add(this.pnlOrderManagement);
             this.Controls.Add(this.pnlManagerDashBoard);
+            this.Controls.Add(this.pnlOrderManagement);
             this.Controls.Add(this.pnlProfile);
             this.Controls.Add(this.pnlStockAlart);
             this.Controls.Add(this.pnlUpdateStock);
@@ -2506,7 +2492,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridViewLowDailySales)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewLowMontlySales)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewYearlySales)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartDashBoard)).EndInit();
             this.pnlOrderManagement.ResumeLayout(false);
             this.pnlOrderManagement.PerformLayout();
             this.pnlUpperOrderList.ResumeLayout(false);
@@ -2662,7 +2647,6 @@
         private System.Windows.Forms.Panel pnlUpperOrderList;
         private System.Windows.Forms.Label lblOrderList;
         private System.Windows.Forms.DataGridView dgvOrderManagement;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartDashBoard;
         private System.Windows.Forms.DataGridView gridViewYearlySales;
         private System.Windows.Forms.DataGridView gridViewLowDailySales;
         private System.Windows.Forms.DataGridView gridViewLowMontlySales;
@@ -2704,5 +2688,6 @@
         private System.Windows.Forms.Label lblProfileDescription;
         private System.Windows.Forms.Label lblOrderDetails;
         private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
     }
 }

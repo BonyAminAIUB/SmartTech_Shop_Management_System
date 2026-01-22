@@ -358,7 +358,6 @@ namespace SmartTechShopManagement
 
             foreach (DataRow row in dt.Rows)
             {
-                // TryParse is safe: it won't crash if a price is empty or text
                 if (long.TryParse(row["customerProductPrice"].ToString(), out long price))
                 {
                     totalSales += price;
@@ -370,16 +369,13 @@ namespace SmartTechShopManagement
 
             foreach (DataRow row in dt.Rows)
             {
-                // 2. Check if the row has a date (Not NULL) and is a valid date
+                //  Checking if the row has a date  
                 string dateString = row["customerProductSoldDate"].ToString();
 
                 if (!string.IsNullOrEmpty(dateString) && DateTime.TryParse(dateString, out DateTime soldDate))
                 {
-                    // 3. Check if the sale happened in THIS Month and THIS Year
                     if (soldDate.Month == todaysDate.Month && soldDate.Year == todaysDate.Year)
                     {
-                        // 4. Add the price to the total
-                        // We use TryParse because your price column is text
                         if (long.TryParse(row["customerProductPrice"].ToString(), out long price))
                         {
                             MontlyValue += price;
@@ -388,24 +384,19 @@ namespace SmartTechShopManagement
                 }
             }
 
-            // 5. Show the result
-            // Based on your screenshot, this should show "18500 TK" (only the last row counts)
+            //  Showing the result
             lblMontlyValue.Text = MontlyValue.ToString();
 
             long YearlyValue = 0;
 
             foreach (DataRow row in dt.Rows)
             {
-                // 1. Get the date string safely
                 string dateString = row["customerProductSoldDate"].ToString();
 
-                // 2. Check if date exists and is valid
                 if (!string.IsNullOrEmpty(dateString) && DateTime.TryParse(dateString, out DateTime soldDate))
                 {
-                    // 3. Check if the sale happened in THIS Year (e.g., 2026)
                     if (soldDate.Year == todaysDate.Year)
                     {
-                        // 4. Add the price to the total
                         if (long.TryParse(row["customerProductPrice"].ToString(), out long price))
                         {
                             YearlyValue += price;
@@ -424,19 +415,19 @@ namespace SmartTechShopManagement
             lblLowStockManager.Text = rowCount.ToString();
 
 
-            chartDashBoard.Series.Clear();
+            //chartDashBoard.Series.Clear();
 
-            Series series = new Series("SalesReport");
+            //Series series = new Series("SalesReport");
 
-            series.ChartType = SeriesChartType.Pie;
+            //series.ChartType = SeriesChartType.Pie;
 
-            int daily = int.Parse(lblDailyValue.Text);
-            int monthly = int.Parse(lblMontlyValue.Text);
-            int yearly = int.Parse(lblYearlyValue.Text);
+            //int daily = int.Parse(lblDailyValue.Text);
+            //int monthly = int.Parse(lblMontlyValue.Text);
+            //int yearly = int.Parse(lblYearlyValue.Text);
 
-            series.Points.AddXY("Daily", daily);
-            series.Points.AddXY("Monthly", monthly);
-            series.Points.AddXY("Yearly", yearly);
+            //series.Points.AddXY("Daily", daily);
+            //series.Points.AddXY("Monthly", monthly);
+            //series.Points.AddXY("Yearly", yearly);
 
 
 

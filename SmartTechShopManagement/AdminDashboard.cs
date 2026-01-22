@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace SmartTechShopManagement
 {
@@ -62,19 +63,16 @@ namespace SmartTechShopManagement
         private void button1_Click(object sender, EventArgs e)
         {
             DateTime todaysDate = DateTime.Now;
-            //pnlOverview.Visible = false;
             pnlProductManagement.Visible = false;
             pnlSalesReport.Visible = true;
-            //pnlStaffAccount.Visible = false;
 
             Connection connection = new Connection();
-            string query = "select * from customerInfoTb";
+            string query = $"select * from customerInfoTb";
             DataTable dt = connection.pullForDataTable(query);
             long totalSales = 0;
 
             foreach (DataRow row in dt.Rows)
             {
-                // TryParse is safe: it won't crash if a price is empty or text
                 if (long.TryParse(row["customerProductPrice"].ToString(), out long price))
                 {
                     totalSales += price;
@@ -86,16 +84,12 @@ namespace SmartTechShopManagement
 
             foreach (DataRow row in dt.Rows)
             {
-                // 2. Check if the row has a date (Not NULL) and is a valid date
                 string dateString = row["customerProductSoldDate"].ToString();
 
                 if (!string.IsNullOrEmpty(dateString) && DateTime.TryParse(dateString, out DateTime soldDate))
                 {
-                    // 3. Check if the sale happened in THIS Month and THIS Year
                     if (soldDate.Month == todaysDate.Month && soldDate.Year == todaysDate.Year)
                     {
-                        // 4. Add the price to the total
-                        // We use TryParse because your price column is text
                         if (long.TryParse(row["customerProductPrice"].ToString(), out long price))
                         {
                             monthlySales += price;
@@ -104,24 +98,21 @@ namespace SmartTechShopManagement
                 }
             }
 
-            // 5. Show the result
-            // Based on your screenshot, this should show "18500 TK" (only the last row counts)
+            //Showing the result
             lblMonthlySales.Text = monthlySales.ToString() + " TK";
 
             long yearlySales = 0;
 
             foreach (DataRow row in dt.Rows)
             {
-                // 1. Get the date string safely
                 string dateString = row["customerProductSoldDate"].ToString();
 
-                // 2. Check if date exists and is valid
+                //  Check if data exist
                 if (!string.IsNullOrEmpty(dateString) && DateTime.TryParse(dateString, out DateTime soldDate))
                 {
-                    // 3. Check if the sale happened in THIS Year (e.g., 2026)
                     if (soldDate.Year == todaysDate.Year)
                     {
-                        // 4. Add the price to the total
+                        //  Adding the price
                         if (long.TryParse(row["customerProductPrice"].ToString(), out long price))
                         {
                             yearlySales += price;
@@ -131,6 +122,13 @@ namespace SmartTechShopManagement
             }
 
             lblYearlySales.Text = yearlySales.ToString() + " TK";
+
+            string queryForLowStock = "select * from productInfoTb where productStockStatus = 'Low Stock'";
+            dgvLowStockAdmin.DataSource = connection.pullForDataTable(queryForLowStock);
+
+            int lowstock = dgvLowStockAdmin.Rows.Count;
+            lowStockCount.Text = (lowstock - 1).ToString();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -400,6 +398,11 @@ namespace SmartTechShopManagement
             MessageBox.Show("Employee Profile Updated Successfully!");
             string query2 = "delete from empProfileUpdate where empUsername = '" + txtRegUsername.Text + "'";
             connection.push(query2);
+        }
+
+        private void lblYearlySales_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
